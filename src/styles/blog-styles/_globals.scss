@@ -1,4 +1,4 @@
-// Style Reset
+// Styles Reset
 * {
     padding: 0px;
     margin: 0px;
@@ -36,4 +36,14 @@ svg {
 
 button {
     cursor: pointer;
+}
+
+// Applying basic styles
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
 }
