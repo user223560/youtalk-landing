@@ -46,6 +46,20 @@ a {
   color: inherit;
 }
 
+._container {
+  max-width: 286px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #EFF5FB;
+}
+
 .header__logo {
   width: 3rem;
   height: 2.125rem;
