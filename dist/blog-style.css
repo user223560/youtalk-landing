@@ -37,6 +37,11 @@ button {
   cursor: pointer;
 }
 
+ul,
+ul li {
+  list-style: none;
+}
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
@@ -55,12 +60,38 @@ a {
 }
 
 .header {
-  padding-top: 11px;
-  padding-bottom: 11px;
   border-bottom: 1px solid #EFF5FB;
 }
-
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6875rem 1rem;
+}
 .header__logo {
+  display: inline-block;
   width: 3rem;
   height: 2.125rem;
+}
+.header__hamburger-menu > span {
+  display: block;
+  width: 1.125rem;
+  height: 0.125rem;
+  border-radius: 1px;
+  background-color: #03B2A5;
+}
+.header__hamburger-menu > span:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 114%;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.header__item {
+  color: #333333;
 }/*# sourceMappingURL=blog-style.css.map */

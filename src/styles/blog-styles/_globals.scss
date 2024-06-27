@@ -38,6 +38,11 @@ button {
     cursor: pointer;
 }
 
+ul,
+ul li {
+    list-style: none;
+}
+
 // Applying basic styles
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
