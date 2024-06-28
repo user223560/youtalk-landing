@@ -29,17 +29,31 @@
         }
     }
 
-    &__list {
+    // &__list {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 1rem;
+    //     line-height: 114%;
+    //     font-size: $fontMd;
+    //     font-weight: 500;
+    // }
+
+    // &__item {
+    //     color: $secondColor;
+    // }
+    &__links {
         display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 1rem;
         line-height: 114%;
         font-size: $fontMd;
         font-weight: 500;
+        color: $secondColor;
     }
 
-    &__item {
-        color: $secondColor;
+    &__dropdown-container {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
     }
 }

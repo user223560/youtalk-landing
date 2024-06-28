@@ -83,15 +83,16 @@ a {
 .header__hamburger-menu > span:not(:last-child) {
   margin-bottom: 0.25rem;
 }
-.header__list {
+.header__links {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
   line-height: 114%;
   font-size: 0.875rem;
   font-weight: 500;
-}
-.header__item {
   color: #333333;
+}
+.header__dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }/*# sourceMappingURL=blog-style.css.map */
