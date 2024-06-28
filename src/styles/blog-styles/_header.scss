@@ -29,23 +29,11 @@
         }
     }
 
-    // &__list {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     gap: 1rem;
-    //     line-height: 114%;
-    //     font-size: $fontMd;
-    //     font-weight: 500;
-    // }
-
-    // &__item {
-    //     color: $secondColor;
-    // }
     &__links {
         display: flex;
         gap: 1rem;
         line-height: 114%;
+        letter-spacing: 0.25px;
         font-size: $fontMd;
         font-weight: 500;
         color: $secondColor;
@@ -53,7 +41,16 @@
 
     &__dropdown-container {
         display: flex;
-        align-items: center;
         gap: 0.25rem;
+    }
+
+    &__button {
+        padding: 0.875rem 1.25rem;
+        border-radius: 0.25rem;
+        color: $twelfthColor;
+        background-color: $tenthColor;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: $fontDft;
+        font-weight: 700;
     }
 }
