@@ -1,3 +1,50 @@
+.header {
+  border-bottom: 1px solid #EFF5FB;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6875rem 1rem;
+}
+.header__logo {
+  display: inline-block;
+  width: 3rem;
+  height: 2.125rem;
+}
+.header__hamburger-menu > span {
+  display: block;
+  width: 1.125rem;
+  height: 0.125rem;
+  border-radius: 1px;
+  background-color: #03B2A5;
+}
+.header__hamburger-menu > span:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.header__links {
+  display: flex;
+  gap: 1rem;
+  line-height: 114%;
+  letter-spacing: 0.25px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333333;
+}
+.header__dropdown-container {
+  display: flex;
+  gap: 0.25rem;
+}
+.header__button {
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.25rem;
+  color: #03B2A5;
+  background-color: #E3F5F5;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -59,49 +106,14 @@ a {
   padding-right: 16px;
 }
 
-.header {
-  border-bottom: 1px solid #EFF5FB;
+@media (max-width: 63.9375em) {
+  .hide-for-smaller {
+    display: none;
+  }
 }
-.header__navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6875rem 1rem;
-}
-.header__logo {
-  display: inline-block;
-  width: 3rem;
-  height: 2.125rem;
-}
-.header__hamburger-menu > span {
-  display: block;
-  width: 1.125rem;
-  height: 0.125rem;
-  border-radius: 1px;
-  background-color: #03B2A5;
-}
-.header__hamburger-menu > span:not(:last-child) {
-  margin-bottom: 0.25rem;
-}
-.header__links {
-  display: flex;
-  gap: 1rem;
-  line-height: 114%;
-  letter-spacing: 0.25px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #333333;
-}
-.header__dropdown-container {
-  display: flex;
-  gap: 0.25rem;
-}
-.header__button {
-  padding: 0.875rem 1.25rem;
-  border-radius: 0.25rem;
-  color: #03B2A5;
-  background-color: #E3F5F5;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
+
+@media (min-width: 64em) {
+  .hide-for-bigger {
+    display: none;
+  }
 }/*# sourceMappingURL=blog-style.css.map */
