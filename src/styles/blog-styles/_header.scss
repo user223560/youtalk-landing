@@ -22,6 +22,8 @@
             height: 0.125rem;
             border-radius: 1px;
             background-color: $twelfthColor;
+            transition: all 200ms ease-in-out;
+            transform-origin: 0.75px 0.95px;
 
             &:not(:last-child) {
                 margin-bottom: 0.25rem;
@@ -29,7 +31,18 @@
         }
 
         &.open {
+
+            > span:nth-child(1) {
+                transform: rotate(45deg);
+            }
             
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
         }
     }
 
@@ -88,4 +101,8 @@
             opacity: 0.75;
         }
     }
+}
+
+.overlay {
+    
 }
