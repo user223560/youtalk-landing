@@ -31,6 +31,28 @@
   font-weight: 500;
   color: #333333;
 }
+.header__links a {
+  position: relative;
+  transition: color 300ms ease-in-out;
+}
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -28px;
+  background: #16C8BB;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.header__links a:hover {
+  color: #000;
+}
+.header__links a:hover::before {
+  opacity: 1;
+}
 .header__dropdown-container {
   display: flex;
   gap: 0.25rem;
@@ -43,6 +65,10 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
+  transition: opacity 300ms ease-in-out;
+}
+.header__button:hover {
+  opacity: 0.75;
 }
 
 * {
