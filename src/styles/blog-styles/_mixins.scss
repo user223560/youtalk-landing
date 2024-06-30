@@ -1,0 +1,19 @@
+// Breakpoints
+
+// 320px, 414px, 768px, 1024px, 1440px
+$breakpoints-up: ("iphonese": "20em", "iphonepromax": "25.875em", "ipadmini": "48em", "ipadpro": "64em", "desktop": "90em");
+
+// 1439px, 1023px, 767px, 413px
+$breakpoints-down: ("ipadpro": "89.9375em", "ipadmini": "63.9375em", "iphonepromax": "47.9375em", "iphonese": "25.8125em");
+
+@mixin breakpoint-up ($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+};
+
+@mixin breakpoint-down ($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+};

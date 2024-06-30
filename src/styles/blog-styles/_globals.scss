@@ -64,9 +64,13 @@ a {
 // Content visibility
 
 .hide-for-smaller {
-
-}
+    @include breakpoint-down(ipadmini){
+        display: none;
+    }
+};
 
 .hide-for-bigger {
-    
-}
+    @include breakpoint-up(ipadpro){
+        display: none;
+    }
+};
