@@ -1,6 +1,34 @@
 .header {
     border-bottom: 1px solid $seventhColor;
 
+    // Hamburger Open Styles
+    &.open {
+        
+        .header__hamburger-menu {
+            
+            > span:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            > span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 3.5625rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient($overlayColor, transparent);
+    }
+
     &__navigation {
         display: flex;
         justify-content: space-between;
@@ -27,21 +55,6 @@
 
             &:not(:last-child) {
                 margin-bottom: 0.25rem;
-            }
-        }
-
-        &.open {
-
-            > span:nth-child(1) {
-                transform: rotate(45deg);
-            }
-            
-            > span:nth-child(2) {
-                opacity: 0;
-            }
-
-            > span:nth-child(3) {
-                transform: rotate(-45deg);
             }
         }
     }
@@ -101,8 +114,4 @@
             opacity: 0.75;
         }
     }
-}
-
-.overlay {
-    
 }
