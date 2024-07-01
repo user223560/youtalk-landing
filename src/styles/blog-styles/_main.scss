@@ -1,0 +1,18 @@
+.main {
+
+    &__navigation {
+        display: flex;
+        gap: 8px;
+        font-size: $fontSm;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.25px;
+        color: $secondColor;
+        opacity: 70%;
+    }
+
+    &__link-container {
+        display: flex;
+        gap: 4px;
+    }
+}
