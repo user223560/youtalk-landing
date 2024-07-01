@@ -46,6 +46,10 @@ ul li {
 // Applying basic styles
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -74,3 +78,10 @@ a {
         display: none;
     }
 };
+
+// Spacing
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

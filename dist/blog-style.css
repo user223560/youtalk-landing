@@ -13,7 +13,7 @@
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 3.5625rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -26,10 +26,13 @@
   display: none;
 }
 .header__navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6875rem 1rem;
+  padding-top: 0.6875rem;
+  padding-bottom: 0.6875rem;
+  background-color: #FFFFFF;
 }
 .header__logo {
   display: inline-block;
@@ -96,6 +99,22 @@
 .header__button:hover {
   opacity: 0.75;
 }
+.header__off-canvas-menu {
+  position: absolute;
+  width: calc(100% - 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  margin-top: 1.5rem;
+  padding: 0.6875rem;
+  border-radius: 5px;
+}
+.header__off-canvas-menu a {
+  display: block;
+  padding: 0.5rem;
+  color: #2963A3;
+  text-align: center;
+}
 
 * {
   padding: 0px;
@@ -144,6 +163,9 @@ ul li {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 a {
   cursor: pointer;
@@ -170,6 +192,15 @@ a {
   }
 }
 
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -185,7 +216,7 @@ a {
   }
 }
 .fade-in {
-  animation: fade-in 300ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -203,5 +234,5 @@ a {
   }
 }
 .fade-out {
-  animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 200ms ease-in-out forwards;
 }/*# sourceMappingURL=blog-style.css.map */
