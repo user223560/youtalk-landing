@@ -176,6 +176,10 @@ a {
   color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+}
+
 ._container {
   max-width: 286px;
   margin-left: 0;
@@ -254,4 +258,8 @@ a {
 .main__link-container {
   display: flex;
   gap: 4px;
+}
+.main__heading {
+  font-size: 26px;
+  line-height: 26px;
 }/*# sourceMappingURL=blog-style.css.map */
