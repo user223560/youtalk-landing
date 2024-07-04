@@ -119,10 +119,10 @@
         font-family: "Montserrat", Arial, Helvetica, sans-serif;
         font-size: $fontDft;
         font-weight: 700;
-        transition: opacity 300ms ease-in-out;
+        transition: background-color 300ms ease-in-out;
 
         &:hover {
-            opacity: 0.75;
+            background-color: #B4E8E4;
         }
     }
 
