@@ -1,5 +1,4 @@
 .main {
-    text-align: center;
 
     &__navigation {
         display: flex;
@@ -61,6 +60,10 @@
         //     border: 1px solid transparent;
         //     box-shadow: $eighthColor 0 0 0 2px inset;
         // }
+    }
+
+    &__articles {
+        text-align: center;
     }
 
     &__button {

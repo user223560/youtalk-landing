@@ -262,9 +262,6 @@ h1, h2, h3, h4, h5, h6 {
   animation: fade-out 200ms ease-in-out forwards;
 }
 
-.main {
-  text-align: center;
-}
 .main__navigation {
   display: flex;
   gap: 0.5rem;
@@ -315,6 +312,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F9FDFD;
   border: 1px solid transparent;
   box-shadow: #16C8BB 0 0 0 2px inset;
+}
+.main__articles {
+  text-align: center;
 }
 .main__button {
   width: 11.375rem;
