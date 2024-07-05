@@ -197,6 +197,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+@media (min-width: 25.875em) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 48em) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+@media (min-width: 64em) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 90em) {
+  .container {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+  }
+}
 
 .has-fade {
   visibility: hidden;

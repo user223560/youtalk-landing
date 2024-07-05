@@ -88,4 +88,24 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     padding-right: 1rem;
     padding-left: 1rem;
+
+    @include breakpoint-up(iphonepromax) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint-up(ipadmini) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    @include breakpoint-up(ipadpro) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include breakpoint-up(desktop) {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
 }
