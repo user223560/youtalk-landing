@@ -61,4 +61,21 @@
         //     box-shadow: $eighthColor 0 0 0 2px inset;
         // }
     }
+
+    &__button {
+        width: 11.375rem;
+        height: 3rem;
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+        color: $firstColor;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: $fontDft;
+        background-color: #35B3A9;
+        transition: background-color 300ms ease-in-out;
+
+        &:hover {
+            background-color: #03a093;
+        }
+    }
 }

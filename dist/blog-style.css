@@ -288,4 +288,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #F9FDFD;
   border: 1px solid transparent;
   box-shadow: #16C8BB 0 0 0 2px inset;
+}
+.main__button {
+  width: 11.375rem;
+  height: 3rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #35B3A9;
+  transition: background-color 300ms ease-in-out;
+}
+.main__button:hover {
+  background-color: #03a093;
 }/*# sourceMappingURL=blog-style.css.map */
