@@ -238,6 +238,9 @@ h1, h2, h3, h4, h5, h6 {
   animation: fade-out 200ms ease-in-out forwards;
 }
 
+.main {
+  text-align: center;
+}
 .main__navigation {
   display: flex;
   gap: 0.5rem;
