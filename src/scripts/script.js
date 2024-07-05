@@ -8,17 +8,17 @@ const fadeElems = document.querySelectorAll(".has-fade")
 hamburger.addEventListener("click", () => {
     console.log("Open hamburger")
 
-    if(header.classList.contains("open")) {
+    if (header.classList.contains("open")) {
         body.classList.remove("noscroll")
         header.classList.remove("open")    // Close Hamburger Menu
-        fadeElems.forEach( (element) => {
+        fadeElems.forEach((element) => {
             element.classList.remove("fade-in")
             element.classList.add("fade-out")
-        } )
+        })
     } else {
         body.classList.add("noscroll")
         header.classList.add("open")    // Open Hamburger Menu
-        fadeElems.forEach( (element) => {
+        fadeElems.forEach((element) => {
             element.classList.remove("fade-out")
             element.classList.add("fade-in")
         })
