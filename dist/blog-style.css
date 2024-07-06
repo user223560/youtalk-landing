@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid transparent;
   box-shadow: #16C8BB 0 0 0 2px inset;
 }
-.main__articles {
+.main__lazy-loading {
   text-align: center;
 }
 .main__button {
