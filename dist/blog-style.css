@@ -334,8 +334,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1rem;
   overflow: hidden;
   transition: box-shadow 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 .main__article-card:hover {
+  transform: scale(1.05);
   box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.1490196078);
 }
 .main__article-card-tags {
