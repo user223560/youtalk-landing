@@ -312,6 +312,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid transparent;
   box-shadow: #16C8BB 0 0 0 2px inset;
 }
+.main__articles {
+  margin-bottom: 28px;
+}
+.main__article:not(:last-child) {
+  margin-bottom: 16px;
+}
 .main__article-card {
   position: relative;
   display: block;
@@ -385,6 +391,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.25px;
 }
 .main__lazy-loading {
+  margin-bottom: 59px;
   text-align: center;
 }
 .main__button {

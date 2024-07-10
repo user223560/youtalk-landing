@@ -62,7 +62,11 @@
     }
 
     &__articles {
-        
+        margin-bottom: 28px;
+    }
+
+    &__article:not(:last-child) {
+        margin-bottom: 16px;
     }
 
     &__article-card {
@@ -146,6 +150,7 @@
     }
 
     &__lazy-loading {
+        margin-bottom: 59px;
         text-align: center;
     }
 
