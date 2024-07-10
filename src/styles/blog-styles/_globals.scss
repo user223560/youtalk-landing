@@ -71,17 +71,23 @@ h1, h2, h3, h4, h5, h6 {
 
 // Content visibility
 
-.hide-for-smaller {
-    @include breakpoint-down(ipadmini){
+.hide-for-ipadmini-and-smaller {
+    @include breakpoint-down(ipadmini) {
         display: none;
     }
-};
+}
 
-.hide-for-bigger {
-    @include breakpoint-up(ipadpro){
+.hide-for-ipadpro-and-bigger {
+    @include breakpoint-up(ipadpro) {
         display: none;
     }
-};
+}
+
+.hide-for-iphonepromax-and-smaller {
+    @include breakpoint-down(iphonepromax) {
+        display: none;
+    }
+}
 
 // Spacing
 
