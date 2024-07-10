@@ -82,7 +82,7 @@
         a {
             position: relative;
             transition: color 300ms ease-in-out;
-
+    
             &::before {
                 content: "";
                 display: block;
@@ -95,10 +95,10 @@
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
-
+    
             &:hover {
                 color: #000;
-
+    
                 &::before {
                     opacity: 1;
                 }

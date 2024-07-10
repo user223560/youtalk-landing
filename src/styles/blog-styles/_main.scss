@@ -65,6 +65,10 @@
         margin-bottom: 1.75rem;
     }
 
+    &__flex-container-top {
+        margin-bottom: 1rem;
+    }
+
     &__article:not(:last-child) {
         margin-bottom: 1rem;
     }
@@ -74,6 +78,12 @@
         display: block;
         border: 1px solid $sixthColor;
         border-radius: 1rem;
+        overflow: hidden; // Actual rounded corners will show up
+        transition: box-shadow 200ms ease-in-out;
+        
+        &:hover {
+            box-shadow: 0 0.1875rem 0.75rem #00000026;
+        }
     }
 
     &__article-card-tags {
@@ -105,7 +115,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        border-radius: 1rem 1rem 0 0;
     }
 
     &__article-card-txt-content {

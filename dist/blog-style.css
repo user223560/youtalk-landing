@@ -321,6 +321,9 @@ h1, h2, h3, h4, h5, h6 {
 .main__articles {
   margin-bottom: 1.75rem;
 }
+.main__flex-container-top {
+  margin-bottom: 1rem;
+}
 .main__article:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -329,6 +332,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   border: 1px solid #DEDEDE;
   border-radius: 1rem;
+  overflow: hidden;
+  transition: box-shadow 200ms ease-in-out;
+}
+.main__article-card:hover {
+  box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.1490196078);
 }
 .main__article-card-tags {
   position: absolute;
@@ -358,7 +366,6 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 1rem 1rem 0 0;
 }
 .main__article-card-txt-content {
   padding: 1rem;
