@@ -9,8 +9,7 @@
         font-weight: 400;
         line-height: 1.125rem;
         letter-spacing: 0.015625rem;
-        color: $secondColor;
-        opacity: 70%;
+        color: #333333b3;
     }
 
     &__link-container {
@@ -66,6 +65,37 @@
         
     }
 
+    &__article-card {
+        position: relative;
+        display: block;
+        border: 1px solid $sixthColor;
+        border-radius: 16px;
+    }
+
+    &__article-card-tags {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 600;
+        font-size: $fontMd;
+        line-height: 20px;
+        color: $secondColor;
+
+        & > li {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            width: fit-content;
+            padding: 6px 8px;
+            border: 1px solid $fourthColor;
+            border-radius: 24px;
+            background-color: #ffffffb3;
+        }
+    }
+
     &__article-card-img {
         height: 12.875rem;
         background-size: cover;
@@ -89,6 +119,7 @@
         padding-top: 0.25rem;
         padding-bottom: 0.6875rem;
         color: $thirdColor;
+        font-weight: 400;
         font-size: $fontSm;
         letter-spacing: 0.25px;
         line-height: 1.125rem;
@@ -97,6 +128,7 @@
     &__article-txt {
         padding-top: 0.3125rem;
         padding-bottom: 0.5rem;
+        font-weight: 400;
         font-size: $fontMd;
         line-height: 1.25rem;
         color: $secondColor;
@@ -106,6 +138,7 @@
         padding-top: 0.3125rem;
         padding-bottom: 0.3125rem;
         color: $fifthColor;
+        font-weight: 400;
         font-size: $fontSm;
         line-height: 1.125rem;
         letter-spacing: 0.25px;
