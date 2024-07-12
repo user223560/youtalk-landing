@@ -79,8 +79,7 @@
         border: 1px solid $sixthColor;
         border-radius: 1rem;
         overflow: hidden;    // Actual rounded corners will show up
-        transition: box-shadow 200ms ease-in-out;
-        transition: transform 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
         
         &:hover {
             transform: scale(1.05);
