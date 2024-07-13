@@ -315,11 +315,11 @@ h1, h2, h3, h4, h5, h6 {
 .main__link {
   transition: color 200ms ease-in-out;
 }
-.main__link:nth-child(2) {
-  cursor: default;
-}
 .main__link:nth-child(1):hover {
   color: #000;
+}
+.main__link:nth-child(2) {
+  cursor: default;
 }
 .main__heading {
   padding-top: 0.5rem;
@@ -327,6 +327,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
   font-size: 1.625rem;
   line-height: 1.625rem;
+}
+@media (min-width: 25.875em) {
+  .main__heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 48em) {
+  .main__heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
 .main__articles-filter {
   display: flex;
@@ -338,6 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 48em) {
   .main__articles-filter {
+    flex-wrap: wrap;
     cursor: auto;
   }
 }

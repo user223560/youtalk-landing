@@ -20,12 +20,12 @@
     &__link {
         transition: color 200ms ease-in-out;
 
-        &:nth-child(2) {
-            cursor: default;
-        }
-        
         &:nth-child(1):hover {
             color: #000;
+        }
+
+        &:nth-child(2) {
+            cursor: default;
         }
     }
 
@@ -35,6 +35,16 @@
         margin-bottom: 1.5rem;
         font-size: 1.625rem;
         line-height: 1.625rem;
+
+        @include breakpoint-up(iphonepromax) {
+            font-size: $fontXxlg;
+            line-height: 2.5rem;
+        }
+
+        @include breakpoint-up(ipadmini) {
+            font-size: $fontLgst;
+            line-height: 3.5rem;
+        }
     }
 
     &__articles-filter {
@@ -46,6 +56,7 @@
         cursor: grab;
 
         @include breakpoint-up(ipadmini) {
+            flex-wrap: wrap;
             cursor: auto;
         }
     }
