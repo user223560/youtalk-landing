@@ -32,6 +32,10 @@
         overflow-x: auto;
         scrollbar-width: none;
         cursor: grab;
+
+        @include breakpoint-up(ipadmini) {
+            cursor: auto;
+        }
     }
 
     &__articles-link {
@@ -84,7 +88,6 @@
 
     &__grid-container-top {
         display: grid;
-
 
         @include breakpoint-up(ipadmini) {
             gap: 1.5rem;
