@@ -62,15 +62,52 @@
     }
 
     &__articles {
+        display: grid;
         margin-bottom: 1.75rem;
+
+        @include breakpoint-up(ipadmini) {
+            gap: 1.5rem;
+            margin-bottom: 2.0625rem;
+        }
+
+        
+        @include breakpoint-up(ipadpro) {
+            gap: 1.5rem;
+            margin-bottom: 2.1875rem;
+        }
+
+        @include breakpoint-up(desktop) {
+            gap: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
     }
 
-    &__flex-container-top {
-        margin-bottom: 1rem;
+    &__grid-container-top {
+        display: grid;
+
+        @include breakpoint-up(ipadmini) {
+            gap: 1.5rem;
+        }
     }
 
-    &__article:not(:last-child) {
+    &__grid-container-bottom {
+        display: grid;
+
+        & > article:nth-child(2) {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint-up(ipadmini) {
+            gap: 1.5rem;
+        }
+    }
+
+    &__article {
         margin-bottom: 1rem;
+
+        @include breakpoint-up(ipadmini) {
+            margin-bottom: 0;
+        }
     }
 
     &__article-card {

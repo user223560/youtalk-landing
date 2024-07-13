@@ -319,13 +319,53 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: #16C8BB 0 0 0 2px inset;
 }
 .main__articles {
+  display: grid;
   margin-bottom: 1.75rem;
 }
-.main__flex-container-top {
+@media (min-width: 48em) {
+  .main__articles {
+    gap: 1.5rem;
+    margin-bottom: 2.0625rem;
+  }
+}
+@media (min-width: 64em) {
+  .main__articles {
+    gap: 1.5rem;
+    margin-bottom: 2.1875rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__articles {
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+.main__grid-container-top {
+  display: grid;
+}
+@media (min-width: 48em) {
+  .main__grid-container-top {
+    gap: 1.5rem;
+  }
+}
+.main__grid-container-bottom {
+  display: grid;
+}
+.main__grid-container-bottom > article:nth-child(2) {
+  margin-bottom: 0;
+}
+@media (min-width: 48em) {
+  .main__grid-container-bottom {
+    gap: 1.5rem;
+  }
+}
+.main__article {
   margin-bottom: 1rem;
 }
-.main__article:not(:last-child) {
-  margin-bottom: 1rem;
+@media (min-width: 48em) {
+  .main__article {
+    margin-bottom: 0;
+  }
 }
 .main__article-card {
   position: relative;
