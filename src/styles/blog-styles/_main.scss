@@ -118,6 +118,10 @@
             .main__article-card-img {
                 height: 25.25rem;
             }
+
+            .main__article-txt {
+                padding-bottom: 3.125rem;
+            }
         }
 
         @include breakpoint-up(ipadpro) {
@@ -139,6 +143,14 @@
         @include breakpoint-up(ipadmini) {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+
+            .main__article-title {
+                padding-bottom: 0.6875rem;
+            }
+
+            .main__article-txt {
+                padding-bottom: 1.5625rem;
+            }
         }
 
         @include breakpoint-up(ipadpro) {
@@ -209,10 +221,14 @@
     }
 
     &__article-title {
-        padding-bottom: 0.625rem;
+        padding-bottom: 0.75rem;
         font-weight: 700;
         font-size: $fontLg;
         line-height: 1.625rem;
+
+        @include breakpoint-up(iphonepromax) {
+            padding-bottom: 0.9375rem;
+        }
     }
 
     &__article-author {
@@ -225,11 +241,15 @@
     }
 
     &__article-txt {
-        padding-bottom: 0.8125rem;
+        padding-bottom: 1.0625rem;
         font-weight: 400;
         font-size: $fontMd;
         line-height: 1.25rem;
         color: $secondColor;
+
+        @include breakpoint-up(iphonepromax) {
+            padding-bottom: 4.4375rem;
+        }
     }
 
     &__article-date {
