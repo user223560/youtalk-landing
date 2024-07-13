@@ -17,6 +17,18 @@
         gap: 0.25rem;
     }
 
+    &__link {
+        transition: color 200ms ease-in-out;
+
+        &:nth-child(2) {
+            cursor: default;
+        }
+        
+        &:nth-child(1):hover {
+            color: #000;
+        }
+    }
+
     &__heading {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
