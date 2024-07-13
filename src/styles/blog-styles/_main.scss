@@ -85,8 +85,21 @@
     &__grid-container-top {
         display: grid;
 
+
         @include breakpoint-up(ipadmini) {
             gap: 1.5rem;
+
+            .main__article-card-img {
+                height: 25.25rem;
+            }
+        }
+
+        @include breakpoint-up(ipadpro) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .main__article-card-img {
+                height: 16.25rem;
+            }
         }
     }
 
@@ -98,7 +111,12 @@
         }
 
         @include breakpoint-up(ipadmini) {
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+        }
+
+        @include breakpoint-up(ipadpro) {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
@@ -153,6 +171,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+
+        @include breakpoint-up(desktop) {
+            height: 16.25rem;
+        }
     }
 
     &__article-card-txt-content {
