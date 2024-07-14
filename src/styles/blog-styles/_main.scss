@@ -143,14 +143,6 @@
         @include breakpoint-up(ipadmini) {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
-
-            .main__article-title {
-                padding-bottom: 0.6875rem;
-            }
-
-            .main__article-txt {
-                padding-bottom: 1.5625rem;
-            }
         }
 
         @include breakpoint-up(ipadpro) {

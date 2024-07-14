@@ -71,8 +71,20 @@ h1, h2, h3, h4, h5, h6 {
 
 // Content visibility
 
+.hide-for-iphonepromax-and-smaller {
+    @include breakpoint-down(iphonepromax) {
+        display: none;
+    }
+}
+
 .hide-for-ipadmini-and-smaller {
     @include breakpoint-down(ipadmini) {
+        display: none;
+    }
+}
+
+.hide-for-ipadpro-and-smaller {
+    @include breakpoint-down(ipadpro) {
         display: none;
     }
 }
@@ -83,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.hide-for-iphonepromax-and-smaller {
-    @include breakpoint-down(iphonepromax) {
+.hide-for-desktop {
+    @include breakpoint-up(desktop) {
         display: none;
     }
 }
