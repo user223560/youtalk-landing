@@ -113,11 +113,11 @@
         .main__article-card-txt-content {
 
             @include breakpoint-up(ipadmini) {
-                height: 196px;
+                height: 12.25rem;
             }
 
             @include breakpoint-up(ipadpro) {
-                height: 240px;
+                height: 15rem;
             }
         }
 
@@ -148,15 +148,15 @@
         .main__article-card-txt-content {
 
             @include breakpoint-up(ipadmini) {
-                height: 241px;
+                height: 15.0625rem;
             }
 
             @include breakpoint-up(ipadpro) {
-                height: 253px;
+                height: 15.8125rem;
             }
 
             @include breakpoint-up(desktop) {
-                height:216px;
+                height: 13.5rem;
             }
         }
 
@@ -234,19 +234,22 @@
         padding: 0.9375rem;
 
         @include breakpoint-up(iphonepromax) {
-            height: 256px;
+            // Sticking the article-date to the bottom by setting height,
+            // then setting flex-grow: 1 for article-txt if using flexbox
+            // or margin-top: auto for arcticle-date without flexbox.  
+            height: 16rem;
         }
     }
 
     &__article-title {
-        margin-bottom: 4px;
+        margin-bottom: 0.25rem;
         font-weight: 700;
         font-size: $fontLg;
         line-height: 1.625rem;
     }
 
     &__article-author {
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
         color: $thirdColor;
         font-weight: 400;
         font-size: $fontSm;
@@ -256,7 +259,7 @@
 
     &__article-txt {
         flex-grow: 1;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
         font-weight: 400;
         font-size: $fontMd;
         line-height: 1.25rem;

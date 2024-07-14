@@ -411,12 +411,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 48em) {
   .main__grid-container-top .main__article-card-txt-content {
-    height: 196px;
+    height: 12.25rem;
   }
 }
 @media (min-width: 64em) {
   .main__grid-container-top .main__article-card-txt-content {
-    height: 240px;
+    height: 15rem;
   }
 }
 @media (min-width: 48em) {
@@ -443,17 +443,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 48em) {
   .main__grid-container-bottom .main__article-card-txt-content {
-    height: 241px;
+    height: 15.0625rem;
   }
 }
 @media (min-width: 64em) {
   .main__grid-container-bottom .main__article-card-txt-content {
-    height: 253px;
+    height: 15.8125rem;
   }
 }
 @media (min-width: 90em) {
   .main__grid-container-bottom .main__article-card-txt-content {
-    height: 216px;
+    height: 13.5rem;
   }
 }
 @media (min-width: 48em) {
@@ -529,17 +529,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 25.875em) {
   .main__article-card-txt-content {
-    height: 256px;
+    height: 16rem;
   }
 }
 .main__article-title {
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.625rem;
 }
 .main__article-author {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #494949;
   font-weight: 400;
   font-size: 0.75rem;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__article-txt {
   flex-grow: 1;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
