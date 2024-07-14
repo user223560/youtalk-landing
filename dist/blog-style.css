@@ -309,6 +309,20 @@ h1, h2, h3, h4, h5, h6 {
   animation: fade-out 200ms ease-in-out forwards;
 }
 
+.main {
+  position: relative;
+}
+@media (min-width: 90em) {
+  .main::before {
+    content: "";
+    position: absolute;
+    top: 319px;
+    left: 0;
+    height: 672px;
+    width: 100%;
+    background-image: url("/src/images/svg/icon27.svg");
+  }
+}
 .main__navigation {
   display: flex;
   gap: 0.5rem;
