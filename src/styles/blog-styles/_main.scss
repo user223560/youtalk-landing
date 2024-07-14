@@ -110,6 +110,17 @@
     &__grid-container-top {
         display: grid;
 
+        .main__article-card-txt-content {
+
+            @include breakpoint-up(ipadmini) {
+                height: 196px;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                height: 240px;
+            }
+        }
+
         @include breakpoint-up(ipadmini) {
             gap: 1.5rem;
 
@@ -132,6 +143,21 @@
 
         & > article:nth-child(2) {
             margin-bottom: 0;
+        }
+
+        .main__article-card-txt-content {
+
+            @include breakpoint-up(ipadmini) {
+                height: 241px;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                height: 253px;
+            }
+
+            @include breakpoint-up(desktop) {
+                height:216px;
+            }
         }
 
         @include breakpoint-up(ipadmini) {
@@ -205,7 +231,11 @@
     &__article-card-txt-content {
         display: flex;
         flex-direction: column;
-        padding: 1.3125rem 1rem;
+        padding: 0.9375rem;
+
+        @include breakpoint-up(iphonepromax) {
+            height: 256px;
+        }
     }
 
     &__article-title {
