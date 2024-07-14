@@ -99,12 +99,10 @@
 
         
         @include breakpoint-up(ipadpro) {
-            gap: 1.5rem;
             margin-bottom: 2.1875rem;
         }
 
         @include breakpoint-up(desktop) {
-            gap: 1.5rem;
             margin-bottom: 3.5rem;
         }
     }
@@ -117,10 +115,6 @@
 
             .main__article-card-img {
                 height: 25.25rem;
-            }
-
-            .main__article-txt {
-                padding-bottom: 3.125rem;
             }
         }
 
@@ -161,7 +155,7 @@
     &__article-card {
         position: relative;
         display: block;
-        height: 100%;
+        min-height: 100%;
         border: 1px solid $sixthColor;
         border-radius: 1rem;
         overflow: hidden;    // Actual rounded corners will show up
@@ -209,22 +203,20 @@
     }
 
     &__article-card-txt-content {
-        padding: 1.375rem 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.3125rem 1rem;
     }
 
     &__article-title {
-        padding-bottom: 0.75rem;
+        margin-bottom: 4px;
         font-weight: 700;
         font-size: $fontLg;
         line-height: 1.625rem;
-
-        @include breakpoint-up(iphonepromax) {
-            padding-bottom: 0.9375rem;
-        }
     }
 
     &__article-author {
-        padding-bottom: 1rem;
+        margin-bottom: 8px;
         color: $thirdColor;
         font-weight: 400;
         font-size: $fontSm;
@@ -233,18 +225,16 @@
     }
 
     &__article-txt {
-        padding-bottom: 1.0625rem;
+        flex-grow: 1;
+        margin-bottom: 8px;
         font-weight: 400;
         font-size: $fontMd;
         line-height: 1.25rem;
         color: $secondColor;
-
-        @include breakpoint-up(iphonepromax) {
-            padding-bottom: 4.4375rem;
-        }
     }
 
     &__article-date {
+        margin-top: auto;
         color: $fifthColor;
         font-weight: 400;
         font-size: $fontSm;
