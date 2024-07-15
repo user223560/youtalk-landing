@@ -198,7 +198,7 @@
         transition: all 200ms ease-in-out;
         
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.050);
             box-shadow: 0 0.1875rem 0.75rem #00000026;
             background-color: $firstColor;
         }
