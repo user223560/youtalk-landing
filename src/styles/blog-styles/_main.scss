@@ -171,9 +171,9 @@
     }
 
     &__article {
+        z-index: 1;    // Desktop background no more overlaps it
         margin-bottom: 1rem;
-        z-index: 1;
-        background-color: $firstColor;
+        background-color: $firstColor;    // Desktop background no more overlaps it
 
         @include breakpoint-up(ipadmini) {
             margin-bottom: 0;
