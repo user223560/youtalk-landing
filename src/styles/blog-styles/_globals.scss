@@ -143,4 +143,9 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 7.5rem;
         padding-right: 7.5rem;
     }
+
+    @include breakpoint-up(desktoplarge) {
+        padding-left: 21.875rem;
+        padding-right: 21.875rem;
+    }
 }
