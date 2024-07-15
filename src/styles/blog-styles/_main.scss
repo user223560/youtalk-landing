@@ -1,19 +1,4 @@
 .main {
-    position: relative; // For positioning desktop svg canvas
-
-    // Big desktop svg canvas related to main
-
-    @include breakpoint-up(desktop) {
-        &::before {
-            content: "";
-            position: absolute;
-            top: 319px;
-            left: 0;
-            height: 672px;
-            width: 100%;
-            background-image: url("/src/images/svg/icon27.svg");
-        }
-    }
 
     &__navigation {
         display: flex;
@@ -187,6 +172,8 @@
 
     &__article {
         margin-bottom: 1rem;
+        z-index: 1;
+        background-color: $firstColor;
 
         @include breakpoint-up(ipadmini) {
             margin-bottom: 0;

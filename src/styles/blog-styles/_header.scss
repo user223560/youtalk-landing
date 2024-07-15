@@ -3,6 +3,8 @@
 
     // Hamburger Open Styles
     &.open {
+        position: relative;
+        z-index: 2;
         
         .header__hamburger-menu {
             
