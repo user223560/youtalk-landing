@@ -45,11 +45,13 @@ ul li {
 
 // Applying basic styles
 body {
-    position: relative;    // For positioning desktop background
+    position: relative;  // For positioning desktop background
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 
     &.noscroll {
-        overflow: hidden;
+        // Cuts off all extra content outside of element's (in this case body's)
+        // viewport, hiding both horizontal and vertical scrolls
+        overflow: hidden; 
     }
 
     // Desktop background

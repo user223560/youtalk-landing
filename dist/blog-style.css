@@ -627,4 +627,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__button:hover {
   background-color: #03a093;
+}
+
+.footer {
+  padding-top: 2.1875rem;
+  padding-bottom: 1.125rem;
+  background-color: #2963A3;
 }/*# sourceMappingURL=blog-style.css.map */
