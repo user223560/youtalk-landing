@@ -5,8 +5,6 @@
 
     &__grid-content {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
     }
 
     &__links-container {
@@ -37,7 +35,7 @@
     }
 
     &__form-area {
-        margin-bottom: 7px;
+        margin-bottom: 24px;
     }
 
     &__subsc-desc {
@@ -48,7 +46,8 @@
     }
 
     &__form {
-        width: 100%;
+        min-width: 100%;
+        // margin-bottom: 8px;
         margin-bottom: 16px;
     }
 
@@ -57,7 +56,10 @@
     }
 
     &__input {
+        width: 100%;
         padding: 14px 16px;
+        margin-bottom: 8px;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
         font-size: $fontMd;
         line-height: 20px;
         color: #9D9D9D;
@@ -73,7 +75,15 @@
     }
 
     &__button {
-
+        padding: 10px 22px;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: $fontDft;
+        font-weight: 700;
+        line-height: 24px;
+        color: $firstColor;
+        background: $twelfthColor;
+        border: 2px solid $twelfthColor;
+        border-radius: 4px;
     }
 
     &__subsc-legal-info {
@@ -82,5 +92,13 @@
         letter-spacing: 0.25px;
         color: $firstColor;
         opacity: 0.7;
+    }
+
+    &__line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #9D9D9D;
+        opacity: 0.3;
     }
 }

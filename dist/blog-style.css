@@ -200,6 +200,12 @@ svg {
   height: auto;
 }
 
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -642,8 +648,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__grid-content {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
 }
 .footer__links-container {
   display: flex;
@@ -670,7 +674,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 .footer__form-area {
-  margin-bottom: 7px;
+  margin-bottom: 24px;
 }
 .footer__subsc-desc {
   font-size: 1.125rem;
@@ -679,14 +683,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
 }
 .footer__form {
-  width: 100%;
+  min-width: 100%;
   margin-bottom: 16px;
 }
 .footer__subsc-field {
   max-width: 100%;
 }
 .footer__input {
+  width: 100%;
   padding: 14px 16px;
+  margin-bottom: 8px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   line-height: 20px;
   color: #9D9D9D;
@@ -699,10 +706,28 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #03B2A5;
   box-shadow: 0 0 0 1px #03B2A5;
 }
+.footer__button {
+  padding: 10px 22px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #03B2A5;
+  border: 2px solid #03B2A5;
+  border-radius: 4px;
+}
 .footer__subsc-legal-info {
   font-size: 0.75rem;
   line-height: 18px;
   letter-spacing: 0.25px;
   color: #FFFFFF;
   opacity: 0.7;
+}
+.footer__line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #9D9D9D;
+  opacity: 0.3;
 }/*# sourceMappingURL=blog-style.css.map */
