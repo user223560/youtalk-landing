@@ -131,6 +131,20 @@
         gap: 20px;
         padding-top: 25px;
         padding-bottom: 42px;
+
+        @include breakpoint-up(ipadmini) {
+            .footer__underline-link:nth-child(1) {
+                order: 2;
+            }
+
+            .footer__underline-link:nth-child(2) {
+                order: 3;
+            }
+
+            .footer__underline-link:nth-child(3) {
+                order: 1;
+            }
+        }
     }
 
     &__underline-link {

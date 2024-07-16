@@ -757,6 +757,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 25px;
   padding-bottom: 42px;
 }
+@media (min-width: 48em) {
+  .footer__underline-content .footer__underline-link:nth-child(1) {
+    order: 2;
+  }
+  .footer__underline-content .footer__underline-link:nth-child(2) {
+    order: 3;
+  }
+  .footer__underline-content .footer__underline-link:nth-child(3) {
+    order: 1;
+  }
+}
 .footer__underline-link {
   display: inline-block;
   font-size: 0.875rem;
