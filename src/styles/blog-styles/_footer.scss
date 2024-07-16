@@ -1,6 +1,5 @@
 .footer {
     padding-top: 2.1875rem;
-    padding-bottom: 42px;
     background-color: $ninthColor;
 
     &__grid-content {
@@ -109,6 +108,11 @@
         margin: 24px 0;
     }
 
+    &__bg-svg-link {
+        width: 221px;
+        height: 50px;
+    }
+
     &__bg-svg-sk {
         width: 221px;
         height: 50px;
@@ -118,6 +122,22 @@
     &__socials-list {
         display:flex;
         flex-wrap: nowrap;
-        gap: 8px;
+        gap: 16px;
+    }
+
+    &__underline-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 25px;
+        padding-bottom: 42px;
+    }
+
+    &__underline-link {
+        display: inline-block;
+        font-size: $fontMd;
+        line-height: 20px;
+        color: $firstColor;
+        opacity: 0.7;
     }
 }

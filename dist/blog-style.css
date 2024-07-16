@@ -643,7 +643,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   padding-top: 2.1875rem;
-  padding-bottom: 42px;
   background-color: #2963A3;
 }
 .footer__grid-content {
@@ -737,6 +736,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
   margin: 24px 0;
 }
+.footer__bg-svg-link {
+  width: 221px;
+  height: 50px;
+}
 .footer__bg-svg-sk {
   width: 221px;
   height: 50px;
@@ -745,5 +748,19 @@ h1, h2, h3, h4, h5, h6 {
 .footer__socials-list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 8px;
+  gap: 16px;
+}
+.footer__underline-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 42px;
+}
+.footer__underline-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.7;
 }/*# sourceMappingURL=blog-style.css.map */
