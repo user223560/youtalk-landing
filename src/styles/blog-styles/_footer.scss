@@ -2,4 +2,37 @@
     padding-top: 2.1875rem;
     padding-bottom: 1.125rem;
     background-color: $ninthColor;
+
+    &__grid-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    &__links-container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 71px;  // 71px
+        margin-bottom: 23px;
+    }
+
+    &__links-group-1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__links-group-2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: $fontDft;
+        font-weight: 700;
+        line-height: 24px;
+        color: $firstColor;
+    }
 }
