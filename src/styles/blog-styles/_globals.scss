@@ -90,6 +90,12 @@ h1, h2, h3, h4, h5, h6 {
 
 // Content visibility
 
+.hide-for-iphonese {
+    @include breakpoint-down(iphonese) {
+        display: none;
+    }
+}
+
 .hide-for-iphonepromax-and-smaller {
     @include breakpoint-down(iphonepromax) {
         display: none;
