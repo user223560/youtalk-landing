@@ -3,7 +3,10 @@
     background-color: $ninthColor;
 
     &__grid-content {
-        display: grid;
+        
+        @include breakpoint-up(ipadmini) {
+            display: grid;
+        }
     }
 
     &__links-container {
@@ -113,12 +116,8 @@
         display: flex;
         flex-direction: column;
         gap: 1.25rem; // 20px
-        margin: 1.5rem 0; // 24px
+        padding: 1.5rem 0; // 24px
         border-top: 2px solid #9d9d9d4d;
-
-        @include breakpoint-up(ipadmini) {
-            margin: 0;
-        }
 
         @include breakpoint-up(ipadpro) {
             border-top: none;

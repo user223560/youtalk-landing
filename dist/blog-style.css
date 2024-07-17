@@ -645,8 +645,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 2.1875rem;
   background-color: #2963A3;
 }
-.footer__grid-content {
-  display: grid;
+@media (min-width: 48em) {
+  .footer__grid-content {
+    display: grid;
+  }
 }
 .footer__links-container {
   display: flex;
@@ -744,13 +746,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  margin: 1.5rem 0;
+  padding: 1.5rem 0;
   border-top: 2px solid rgba(157, 157, 157, 0.3019607843);
-}
-@media (min-width: 48em) {
-  .footer__socials {
-    margin: 0;
-  }
 }
 @media (min-width: 64em) {
   .footer__socials {
