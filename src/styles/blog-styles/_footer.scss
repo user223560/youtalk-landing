@@ -11,6 +11,10 @@
         justify-content: space-between;
         column-gap: 4.4375rem; // 71px
         margin-bottom: 1.4375rem; // 23px
+
+        @include breakpoint-up(ipadmini) {
+            margin: 0;
+        }
     }
 
     &__links-group-1 {
@@ -35,6 +39,10 @@
 
     &__form-area {
         margin-bottom: 1.5rem; // 24px
+
+        @include breakpoint-up(ipadmini) {
+            margin: 0;
+        }
     }
 
     &__subsc-desc {
@@ -107,6 +115,14 @@
         gap: 1.25rem; // 20px
         margin: 1.5rem 0; // 24px
         border-top: 2px solid #9d9d9d4d;
+
+        @include breakpoint-up(ipadmini) {
+            margin: 0;
+        }
+
+        @include breakpoint-up(ipadpro) {
+            border-top: none;
+        }
     }
 
     &__bg-svg-link {
@@ -134,6 +150,10 @@
         padding-bottom: 2.625rem; // 42px
 
         @include breakpoint-up(ipadmini) {
+
+            padding-top: 1.3125rem;  // 21px
+            padding-bottom: 1.5625rem;  // 25px
+
             .footer__underline-link:nth-child(1) {
                 order: 2;
             }
