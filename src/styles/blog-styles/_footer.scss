@@ -205,6 +205,18 @@
                 order: 1;
             }
         }
+
+        @include breakpoint-up(ipadpro) {
+            gap: 0;
+
+            .footer__underline-item:nth-child(1) {
+                margin-right: 6.25rem;  // 100px
+            }
+
+            .footer__underline-item:nth-child(3) {
+                margin-right: 11.1875rem;  // 179px
+            }
+        }
     }
 
     &__underline-item {

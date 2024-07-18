@@ -831,6 +831,17 @@ h1, h2, h3, h4, h5, h6 {
     order: 1;
   }
 }
+@media (min-width: 64em) {
+  .footer__underline-content {
+    gap: 0;
+  }
+  .footer__underline-content .footer__underline-item:nth-child(1) {
+    margin-right: 6.25rem;
+  }
+  .footer__underline-content .footer__underline-item:nth-child(3) {
+    margin-right: 11.1875rem;
+  }
+}
 .footer__underline-item {
   display: inline-block;
   font-size: 0.875rem;
