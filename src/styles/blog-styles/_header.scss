@@ -115,7 +115,7 @@
                 bottom: -1.875rem;
                 background: $eighthColor;
                 opacity: 0;
-                transition: opacity 300ms ease-in-out;
+                transition: opacity 200ms ease;
                 cursor: auto;
             }
     
@@ -146,7 +146,7 @@
         font-family: "Montserrat", Arial, Helvetica, sans-serif;
         font-size: $fontDft;
         font-weight: 700;
-        transition: background-color 300ms ease-in-out;
+        transition: background-color 200ms ease;
 
         &:hover {
             background-color: #B4E8E4;

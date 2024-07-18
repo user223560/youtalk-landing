@@ -102,7 +102,7 @@
   bottom: -1.875rem;
   background: #16C8BB;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 200ms ease;
   cursor: auto;
 }
 .header__links a:hover {
@@ -128,7 +128,7 @@
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  transition: background-color 300ms ease-in-out;
+  transition: background-color 200ms ease;
 }
 .header__button:hover {
   background-color: #B4E8E4;
@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.125rem;
   letter-spacing: 0.015625rem;
   color: rgba(51, 51, 51, 0.7019607843);
-  transition: color 200ms ease-in-out;
+  transition: color 200ms ease;
 }
 .main__link:nth-child(1):hover {
   color: #000;
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   font-weight: 600;
   color: #333333;
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease;
 }
 .main__articles-link:focus {
   background-color: #F9FDFD;
@@ -635,7 +635,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   background-color: #35B3A9;
-  transition: background-color 300ms ease-in-out;
+  transition: background-color 200ms ease;
 }
 .main__button:hover {
   background-color: #03a093;
