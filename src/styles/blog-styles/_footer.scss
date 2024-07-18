@@ -1,6 +1,10 @@
 .footer {
-    padding-top: 2.1875rem;
+    padding-top: 2.1875rem;  // 35px
     background-color: $ninthColor;
+
+    @include breakpoint-up(desktop) {
+        padding-top: 2.5rem;  // 40px
+    }
 
     &__grid-content {
         
@@ -15,9 +19,20 @@
         }
 
         @include breakpoint-up(ipadpro) {
-            grid-template-columns: auto 345px;
-            grid-template-rows: 184px auto;
-            gap: 24px 84px;
+            grid-template-columns: auto 21.5625rem;  // 345px
+            grid-template-rows: 11.5rem auto;  // 184px
+            gap: 1.5rem 5.25rem;  // 24px 84px
+        }
+
+        @include breakpoint-up(desktop) {
+            // grid-template-columns: auto 316px 1fr;
+            grid-template-columns: 19.375rem 24rem 21.9375rem;  // 310px 384px 351px
+            grid-template-rows: none;
+            grid-template-areas: 
+                "links form socials";
+            column-gap: 5.6875rem;  // 91px
+            // column-gap: 4.8125rem;  // 77px
+            margin-bottom: 1.6875rem;  // 27px
         }
     }
 
@@ -38,6 +53,12 @@
 
         @include breakpoint-up(ipadpro) {
             padding: 0;
+        }
+
+        @include breakpoint-up(desktop) {
+            grid-template-columns: repeat(2, 9.6875rem);  // 155px
+            // column-gap: 5.8125rem;  // 93px
+            column-gap: 2.875rem;  // 46px
         }
     }
 
@@ -93,6 +114,10 @@
         min-width: 100%;
         // margin-bottom: 8px;
         margin-bottom: 1rem; // 16px
+
+        @include breakpoint-up(desktop) {
+            margin-bottom: 0.75rem;  // 12px
+        }
     }
 
     &__subsc-field {
@@ -107,6 +132,7 @@
                 top: 0;
                 right: 0;
                 height: 3.125rem;  // 50px
+                overflow: hidden;
                 transition: all 200ms ease;
 
                 &:hover {
@@ -183,6 +209,15 @@
             border-top: none;
             gap: 6.6875rem;  // 107px
         }
+
+        @include breakpoint-up(desktop) {
+            flex-direction: column;
+            align-items: flex-start;
+            // gap: 1.75rem;  // 28px
+            // gap: 2.4375rem;  // 39px
+            gap: 2.5rem;  // 40px
+            padding: 0 0 0 5.5rem;  // 88px
+        }
     }
 
     &__bg-svg-link {
@@ -200,6 +235,13 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 1rem; // 16px
+    }
+
+    &__line {
+        
+        @include breakpoint-up(desktop) {
+            // margin-top: 1.5rem;  // 24px
+        }
     }
 
     &__underline-content {
@@ -234,6 +276,18 @@
 
             .footer__underline-item:nth-child(3) {
                 margin-right: 11.1875rem;  // 179px
+            }
+        }
+
+        @include breakpoint-up(desktop) {
+            padding: 1.5625rem 0; // 25px
+
+            .footer__underline-item:nth-child(1) {
+                margin-right: 3.3125rem;  // 53px
+            }
+
+            .footer__underline-item:nth-child(3) {
+                margin-right: 3.3125rem;  // 53px
             }
         }
     }

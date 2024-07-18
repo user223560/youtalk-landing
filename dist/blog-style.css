@@ -645,6 +645,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 2.1875rem;
   background-color: #2963A3;
 }
+@media (min-width: 90em) {
+  .footer {
+    padding-top: 2.5rem;
+  }
+}
 @media (min-width: 48em) {
   .footer__grid-content {
     display: grid;
@@ -657,9 +662,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 64em) {
   .footer__grid-content {
-    grid-template-columns: auto 345px;
-    grid-template-rows: 184px auto;
-    gap: 24px 84px;
+    grid-template-columns: auto 21.5625rem;
+    grid-template-rows: 11.5rem auto;
+    gap: 1.5rem 5.25rem;
+  }
+}
+@media (min-width: 90em) {
+  .footer__grid-content {
+    grid-template-columns: 19.375rem 24rem 21.9375rem;
+    grid-template-rows: none;
+    grid-template-areas: "links form socials";
+    -moz-column-gap: 5.6875rem;
+         column-gap: 5.6875rem;
+    margin-bottom: 1.6875rem;
   }
 }
 .footer__links-container {
@@ -683,6 +698,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 64em) {
   .footer__links-container {
     padding: 0;
+  }
+}
+@media (min-width: 90em) {
+  .footer__links-container {
+    grid-template-columns: repeat(2, 9.6875rem);
+    -moz-column-gap: 2.875rem;
+         column-gap: 2.875rem;
   }
 }
 .footer__links-group-1 {
@@ -731,6 +753,11 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 100%;
   margin-bottom: 1rem;
 }
+@media (min-width: 90em) {
+  .footer__form {
+    margin-bottom: 0.75rem;
+  }
+}
 .footer__subsc-field {
   max-width: 100%;
 }
@@ -743,6 +770,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     right: 0;
     height: 3.125rem;
+    overflow: hidden;
     transition: all 200ms ease;
   }
   .footer__subsc-field .desktop-submit-btn:hover {
@@ -814,6 +842,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 6.6875rem;
   }
 }
+@media (min-width: 90em) {
+  .footer__socials {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 0 0 0 5.5rem;
+  }
+}
 .footer__bg-svg-link {
   width: 13.8125rem;
   height: 3.125rem;
@@ -857,6 +893,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer__underline-content .footer__underline-item:nth-child(3) {
     margin-right: 11.1875rem;
+  }
+}
+@media (min-width: 90em) {
+  .footer__underline-content {
+    padding: 1.5625rem 0;
+  }
+  .footer__underline-content .footer__underline-item:nth-child(1) {
+    margin-right: 3.3125rem;
+  }
+  .footer__underline-content .footer__underline-item:nth-child(3) {
+    margin-right: 3.3125rem;
   }
 }
 .footer__underline-item {
