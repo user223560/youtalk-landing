@@ -67,8 +67,8 @@
         margin-bottom: 1.5rem; // 24px
 
         @include breakpoint-up(ipadmini) {
-            margin: 0;
             grid-area: form;
+            margin: 0;
         }
     }
 
@@ -144,9 +144,9 @@
         border-top: 2px solid #9d9d9d4d;
 
         @include breakpoint-up(ipadmini) {
+            grid-area: socials;
             flex-direction: row;
             align-items: center;
-            grid-area: socials;
         }
 
         @include breakpoint-up(ipadpro) {
@@ -183,21 +183,21 @@
             padding-top: 1.3125rem;  // 21px
             padding-bottom: 1.5625rem;  // 25px
 
-            .footer__underline-link:nth-child(1) {
+            .footer__underline-item:nth-child(1) {
                 order: 2;
             }
 
-            .footer__underline-link:nth-child(2) {
+            .footer__underline-item:nth-child(2) {
                 order: 3;
             }
 
-            .footer__underline-link:nth-child(3) {
+            .footer__underline-item:nth-child(3) {
                 order: 1;
             }
         }
     }
 
-    &__underline-link {
+    &__underline-item {
         display: inline-block;
         font-size: $fontMd;
         line-height: 1.25rem; // 20px
