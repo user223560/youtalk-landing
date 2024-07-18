@@ -97,6 +97,25 @@
 
     &__subsc-field {
         max-width: 100%;
+
+        @include breakpoint-up(desktop) {
+            position: relative;  // For Positioning Desktop Button
+
+            // Desktop Button
+            .desktop-submit-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 3.125rem;  // 50px
+                transition: all 200ms ease;
+
+                &:hover {
+                    background: #03a094;
+                    border: 2px solid #03a094;
+                    color: $firstColor;
+                }
+            }
+        }
     }
 
     &__input {

@@ -734,6 +734,23 @@ h1, h2, h3, h4, h5, h6 {
 .footer__subsc-field {
   max-width: 100%;
 }
+@media (min-width: 90em) {
+  .footer__subsc-field {
+    position: relative;
+  }
+  .footer__subsc-field .desktop-submit-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3.125rem;
+    transition: all 200ms ease;
+  }
+  .footer__subsc-field .desktop-submit-btn:hover {
+    background: #03a094;
+    border: 2px solid #03a094;
+    color: #FFFFFF;
+  }
+}
 .footer__input {
   width: 100%;
   padding: 0.875rem 1rem;
