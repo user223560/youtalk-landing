@@ -13,6 +13,12 @@
                 "links form"
                 "socials form";
         }
+
+        @include breakpoint-up(ipadpro) {
+            grid-template-columns: auto 345px;
+            grid-template-rows: 184px auto;
+            gap: 24px 84px;
+        }
     }
 
     &__links-container {
@@ -28,6 +34,10 @@
             padding-bottom: 0.875rem;  // 14px
             margin: 0;
             column-gap: 4.6875rem;  // 75px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            padding: 0;
         }
     }
 
@@ -150,7 +160,9 @@
         }
 
         @include breakpoint-up(ipadpro) {
+            padding-top: 0;
             border-top: none;
+            gap: 6.6875rem;  // 107px
         }
     }
 
@@ -175,13 +187,11 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1.25rem; // 20px
-        padding-top: 1.5625rem; // 25px
-        padding-bottom: 2.625rem; // 42px
+        padding: 1.5625rem 0; // 25px
 
         @include breakpoint-up(ipadmini) {
 
-            padding-top: 1.3125rem;  // 21px
-            padding-bottom: 1.5625rem;  // 25px
+            padding: 1.3125rem 0;  // 21px
 
             .footer__underline-item:nth-child(1) {
                 order: 2;

@@ -655,6 +655,13 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-areas: "links form" "socials form";
   }
 }
+@media (min-width: 64em) {
+  .footer__grid-content {
+    grid-template-columns: auto 345px;
+    grid-template-rows: 184px auto;
+    gap: 24px 84px;
+  }
+}
 .footer__links-container {
   display: flex;
   justify-content: space-between;
@@ -671,6 +678,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     -moz-column-gap: 4.6875rem;
          column-gap: 4.6875rem;
+  }
+}
+@media (min-width: 64em) {
+  .footer__links-container {
+    padding: 0;
   }
 }
 .footer__links-group-1 {
@@ -780,7 +792,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 64em) {
   .footer__socials {
+    padding-top: 0;
     border-top: none;
+    gap: 6.6875rem;
   }
 }
 .footer__bg-svg-link {
@@ -801,13 +815,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
-  padding-top: 1.5625rem;
-  padding-bottom: 2.625rem;
+  padding: 1.5625rem 0;
 }
 @media (min-width: 48em) {
   .footer__underline-content {
-    padding-top: 1.3125rem;
-    padding-bottom: 1.5625rem;
+    padding: 1.3125rem 0;
   }
   .footer__underline-content .footer__underline-item:nth-child(1) {
     order: 2;
