@@ -6,6 +6,12 @@
         
         @include breakpoint-up(ipadmini) {
             display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 16.5rem;  // 264px
+            column-gap: 5rem;  // 80px
+            grid-template-areas: 
+                "links form"
+                "socials form";
         }
     }
 
@@ -16,7 +22,12 @@
         margin-bottom: 1.4375rem; // 23px
 
         @include breakpoint-up(ipadmini) {
+            grid-area: links;
+            display: grid;
+            grid-template-columns: 6.9375rem 12.75rem;  // 111px 204px
+            padding-bottom: 0.875rem;  // 14px
             margin: 0;
+            column-gap: 4.6875rem;  // 75px
         }
     }
 
@@ -24,12 +35,20 @@
         display: flex;
         flex-direction: column;
         row-gap: 1rem; // 16px
+
+        @include breakpoint-up(ipadmini) {
+            justify-content: space-between;
+        }
     }
 
     &__links-group-2 {
         display: flex;
         flex-direction: column;
         row-gap: 1rem; // 16px
+
+        @include breakpoint-up(ipadmini) {
+            justify-content: space-between;
+        }
     }
 
     &__link {
@@ -38,6 +57,10 @@
         font-weight: 700;
         line-height: 1.5rem; // 24px
         color: $firstColor;
+
+        @include breakpoint-up(ipadmini) {
+            
+        }
     }
 
     &__form-area {
@@ -45,6 +68,7 @@
 
         @include breakpoint-up(ipadmini) {
             margin: 0;
+            grid-area: form;
         }
     }
 
@@ -118,6 +142,12 @@
         gap: 1.25rem; // 20px
         padding: 1.5rem 0; // 24px
         border-top: 2px solid #9d9d9d4d;
+
+        @include breakpoint-up(ipadmini) {
+            flex-direction: row;
+            align-items: center;
+            grid-area: socials;
+        }
 
         @include breakpoint-up(ipadpro) {
             border-top: none;
