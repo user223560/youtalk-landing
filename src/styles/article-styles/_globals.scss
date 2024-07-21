@@ -1,0 +1,147 @@
+// Styles Reset
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+// Applying basic styles
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    
+    &.noscroll {
+        // Cuts off all extra content outside of element's (in this case body's)
+        // viewport, hiding both horizontal and vertical scrolls
+        overflow: hidden; 
+    }
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $secondColor;
+}
+
+// ._container {
+//     max-width: 286px;
+//     margin-left: 0;
+//     margin-right: 0;
+//     padding-left: 16px;
+//     padding-right: 16px;
+// }
+
+// Content visibility
+
+.hide-for-iphonese {
+    @include breakpoint-down(iphonese) {
+        display: none;
+    }
+}
+
+.hide-for-iphonepromax-and-smaller {
+    @include breakpoint-down(iphonepromax) {
+        display: none;
+    }
+}
+
+.hide-for-ipadmini-and-smaller {
+    @include breakpoint-down(ipadmini) {
+        display: none;
+    }
+}
+
+.hide-for-ipadpro-and-smaller {
+    @include breakpoint-down(ipadpro) {
+        display: none;
+    }
+}
+
+.hide-for-ipadpro-and-bigger {
+    @include breakpoint-up(ipadpro) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(desktop) {
+        display: none;
+    }
+}
+
+// Spacing
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @include breakpoint-up(iphonepromax) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint-up(ipadmini) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    @include breakpoint-up(ipadpro) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include breakpoint-up(desktop) {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+    @include breakpoint-up(desktoplarge) {
+        padding-left: 21.875rem;
+        padding-right: 21.875rem;
+    }
+}

@@ -11,6 +11,123 @@
     <title>Youtalk | Статья</title>
 </head>
 <body>
-    <p>Hi There!</p>
+    <header class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="header__navigation container">
+            <a href="/" class="header__logo">
+                <img src="/src/images/svg/icon2.svg" alt="Youtalk">
+            </a>
+            <a href="#" class="header__hamburger-menu hide-for-ipadpro-and-bigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="header__links hide-for-ipadmini-and-smaller">
+                <a href="#" class="header__link">О нас</a>
+                <a href="#" class="header__link">Тарифы</a>
+                <a href="#" class="header__link">Для бизнеса</a>
+                <a href="#" class="header__link">Психологам</a>
+                <a href="#" class="header__link">Сертификаты</a>
+                <a href="#" class="header__link">
+                    <div class="header__dropdown-container">
+                        <span>Материалы</span>
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.09998 0.899902L5.99998 5.0999L10.9 0.899902" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="#" class="header__link">FAQ</a>
+            </div>
+            <button type="button" class="header__button hide-for-ipadmini-and-smaller">Подобрать психолога</button>
+        </nav>
+        <div class="header__off-canvas-menu has-fade">
+            <a href="#">О нас</a>
+            <a href="#">Тарифы</a>
+            <a href="#">Для бизнеса</a>
+            <a href="#">Психологам</a>
+            <a href="#">Сертификаты</a>
+            <a href="#">Материалы</a>
+            <a href="#">FAQ</a>
+        </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer container">
+        <div class="footer__grid-content">
+            <div class="footer__links-container">
+                <div class="footer__links-group-1">
+                    <a href="#" class="footer__link">О нас</a>
+                    <a href="#" class="footer__link">Тарифы</a>
+                    <a href="#" class="footer__link">Для бизнеса</a>
+                    <a href="#" class="footer__link">Психологам</a>
+                    <a href="#" class="footer__link">FAQ</a>
+                </div>
+                <div class="footer__links-group-2">
+                    <a href="#" class="footer__link">Блог</a>
+                    <a href="#" class="footer__link">Вебинары</a>
+                    <a href="#" class="footer__link">Подскаст</a>
+                    <a href="#" class="footer__link">Сертификат</a>
+                    <a href="#" class="footer__link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__form-area">
+                <h4 class="footer__subsc-desc">
+                    Одно письмо в неделю со свежими новостями и акциями
+                </h4>
+                <form class="footer__form" action="">
+                    <div class="footer__subsc-field">
+                        <input class="footer__input" type="email" placeholder="Ваш e-mail">
+                        <button class="footer__button desktop-submit-btn" type="submit">
+                            <img
+                            class="footer__subsc-submit-short hide-for-ipadpro-and-smaller"
+                            src="/src/images/svg/icon1.svg"
+                            alt="Отправить">
+                            <span class="footer__subsc-submit-full hide-for-desktop">
+                                Подписаться
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <p class="footer__subsc-legal-info">
+                    Подписываясь, я соглашаюсь на обработку персональных данных 
+                    в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», 
+                    а также с Политикой конфиденциальности
+                </p>
+            </div>
+            <div class="footer__socials">
+                <a class="footer__bg-svg-link" href="#">
+                    <div class="footer__bg-svg-sk"></div>
+                </a>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-list-item">
+                        <a href="#">
+                            <img src="/src/images/svg/icon4.svg" alt="Иконка логотипа ВКонтакте">
+                        </a>
+                    </li>
+                    <li class="footer__socials-list-item">
+                        <a href="#">
+                            <img src="/src/images/svg/icon5.svg" alt="Иконка логотипа Телеграм">
+                        </a>
+                    </li>
+                    <li class="footer__socials-list-item">
+                        <a href="#">
+                            <img src="/src/images/svg/icon6.svg" alt="Иконка логотипа Твиттер">
+                        </a>
+                    </li>
+                    <li class="footer__socials-list-item">
+                        <a href="#">
+                            <img src="/src/images/svg/icon7.svg" alt="Иконка логотипа Яндекс Дзен">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer__line">
+        <div class="footer__underline-content">
+            <a href="#" class="footer__underline-item">Юридические документы</a>
+            <a href="#" class="footer__underline-item">Способы оплаты</a>
+            <span class="footer__underline-item">©Youtalk, 2018 – 2022</span>
+        </div>
+    </footer>
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>

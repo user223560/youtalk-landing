@@ -1,0 +1,311 @@
+.main {
+
+    &__navigation {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint-up(desktoplarge) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__link-container {
+        display: flex;
+        gap: 0.25rem;
+    }
+
+    &__link {
+        font-size: $fontSm;
+        font-weight: 400;
+        line-height: 1.125rem;
+        letter-spacing: 0.015625rem;
+        color: #333333b3;
+        transition: color 200ms ease;
+
+        &:nth-child(1):hover {
+            color: #000;
+        }
+
+        &:nth-child(2) {
+            cursor: default;
+        }
+
+        @include breakpoint-up(desktoplarge) {
+            font-size: 0.8125rem;
+        }
+    }
+
+    &__heading {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.625rem;
+        line-height: 1.625rem;
+
+        @include breakpoint-up(iphonepromax) {
+            font-size: $fontXxlg;
+            line-height: 2.5rem;
+        }
+
+        @include breakpoint-up(ipadmini) {
+            font-size: $fontLgst;
+            line-height: 3.5rem;
+        }
+    }
+
+    &__articles-filter {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+        overflow-x: auto;
+        scrollbar-width: none;
+        cursor: grab;
+
+        @include breakpoint-up(ipadmini) {
+            flex-wrap: wrap;
+            cursor: auto;
+        }
+    }
+
+    &__articles-link {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        white-space: nowrap;
+        gap: 0.25rem;
+        padding: 0.375rem 0.5rem;
+        border: 1px solid $fourthColor;
+        border-radius: 1.5rem;
+        line-height: 1.25rem;
+        font-size: $fontMd;
+        font-weight: 600;
+        color: $secondColor;
+        transition: box-shadow 200ms ease;
+
+        &:focus {
+            background-color: $eleventhColor;
+            border: 1px solid transparent;
+            box-shadow: $eighthColor 0 0 0 2px inset;
+        }
+
+        // &:hover {
+        //     border: 1px solid transparent;
+        //     box-shadow: $eighthColor 0 0 0 2px inset;
+        // }
+    }
+
+    &__articles {
+        display: grid;
+        margin-bottom: 1.75rem;
+
+        @include breakpoint-up(ipadmini) {
+            gap: 1.5rem;
+            margin-bottom: 2.0625rem;
+        }
+
+        
+        @include breakpoint-up(ipadpro) {
+            margin-bottom: 2.1875rem;
+        }
+
+        @include breakpoint-up(desktop) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__grid-container-top {
+        display: grid;
+
+        .main__article-card-txt-content {
+
+            @include breakpoint-up(ipadmini) {
+                height: 12.25rem;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                height: 15rem;
+            }
+        }
+
+        @include breakpoint-up(ipadmini) {
+            gap: 1.5rem;
+
+            .main__article-card-img {
+                height: 25.25rem;
+            }
+        }
+
+        @include breakpoint-up(ipadpro) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .main__article-card-img {
+                height: 16.25rem;
+            }
+        }
+    }
+
+    &__grid-container-bottom {
+        display: grid;
+
+        & > article:nth-child(2) {
+            margin-bottom: 0;
+        }
+
+        .main__article-card-txt-content {
+
+            @include breakpoint-up(ipadmini) {
+                height: 15.0625rem;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                height: 15.8125rem;
+            }
+
+            @include breakpoint-up(desktop) {
+                height: 13.5rem;
+            }
+        }
+
+        @include breakpoint-up(ipadmini) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        @include breakpoint-up(ipadpro) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__article {
+        z-index: 1;    // Desktop background no more overlaps it
+        margin-bottom: 1rem;
+        background-color: $firstColor;    // Desktop background no more overlaps it
+
+        @include breakpoint-up(ipadmini) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__article-card {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        border: 1px solid $sixthColor;
+        border-radius: 1rem;
+        overflow: hidden;    // Actual rounded corners will show up
+        transition: all 200ms ease-in-out;
+        
+        &:hover {
+            transform: scale(1.050);
+            box-shadow: 0 0.1875rem 0.75rem #00000026;
+            background-color: $firstColor;
+        }
+    }
+
+    &__article-card-tags {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: $fontMd;
+        line-height: 0.25rem;
+        color: $secondColor;
+
+        & > li {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            width: fit-content;
+            padding: 0.375rem 0.5rem;
+            border: 1px solid $fourthColor;
+            border-radius: 1.5rem;
+            background-color: #ffffffb3;
+        }
+    }
+
+    &__article-card-img {
+        height: 12.875rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @include breakpoint-up(desktop) {
+            height: 16.25rem;
+        }
+    }
+
+    &__article-card-txt-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0.9375rem;
+
+        @include breakpoint-up(iphonepromax) {
+            // Sticking the article-date to the bottom by setting height,
+            // then setting flex-grow: 1 for article-txt if using flexbox
+            // or margin-top: auto for arcticle-date without flexbox.  
+            height: 16rem;
+        }
+    }
+
+    &__article-title {
+        margin-bottom: 0.25rem;
+        font-weight: 700;
+        font-size: $fontLg;
+        line-height: 1.625rem;
+    }
+
+    &__article-author {
+        margin-bottom: 0.5rem;
+        color: $thirdColor;
+        font-weight: 400;
+        font-size: $fontSm;
+        letter-spacing: 0.25px;
+        line-height: 1.125rem;
+    }
+
+    &__article-txt {
+        flex-grow: 1;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+        font-size: $fontMd;
+        line-height: 1.25rem;
+        color: $secondColor;
+    }
+
+    &__article-date {
+        margin-top: auto;
+        color: $fifthColor;
+        font-weight: 400;
+        font-size: $fontSm;
+        line-height: 1.125rem;
+        letter-spacing: 0.25px;
+    }
+
+    &__lazy-loading {
+        margin-bottom: 3.6875rem;
+        text-align: center;
+    }
+
+    &__button {
+        width: 11.375rem;
+        height: 3rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+        color: $firstColor;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: $fontDft;
+        line-height: 1.5rem;
+        background-color: #35B3A9;
+        transition: background-color 200ms ease;
+
+        &:hover {
+            background-color: #03a093;
+        }
+    }
+}
