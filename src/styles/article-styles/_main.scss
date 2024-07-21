@@ -1,14 +1,12 @@
 .main {
     
     &__breadcrumbs {
-        padding-top: 20px;  // 20px
-        margin-bottom: 42px;  // 42px
+        margin: 1rem 0 2rem;  // 16px 32px
     }
 
     &__breadcrumbs-list {
         display: flex;
-        // gap: 8px;  // 8px
-        gap: 10px;  // 10px
+        gap: 0.625rem;  // 10px
         align-items: center;
 
     }
@@ -16,13 +14,8 @@
     &__breadcrumbs-nav-link-with-arrow {
         display: flex;
         align-items: center;
-        // gap: 4px;  // 4px
-        gap: 10px;  // 10px
+        gap: 0.625rem;  // 10px
         flex-shrink: 0;
-
-        // &:last-child {
-        //     max-width: 150px;  // 150px
-        // }
 
         & > svg {
             // width: 16px;  // 16px
@@ -33,16 +26,43 @@
     &__breadcrumbs-nav-link {
         display: inline-block;
         font-size: $fontSm;
-        line-height: 18px;  // 18px
+        line-height: 1.125rem;  // 18px
         letter-spacing: 0.25px;
         color: #333333b3;
 
         &:last-child {
-            max-width: 156px;  // 156px
+            max-width: 9.75rem;  // 156px
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis;
+            text-overflow: ellipsis;  // Won't work without the above properties
             pointer-events: none;
+        }
+    }
+
+    &__flex-container {
+
+    }
+
+    &__article {
+
+    }
+
+    &__article-info {
+        margin-bottom: 1rem;  // 16px
+    }
+
+    &__article-info-title {
+        margin-bottom: 0.5rem;  // 8px
+        line-height: 32px;  // 32px
+    }
+
+    &__article-info-text {
+        font-size: $fontMd;
+        line-height: 20px;  // 20px
+        color: $thirdColor;
+
+        & > span {
+            color: $ninthColor;
         }
     }
 }
