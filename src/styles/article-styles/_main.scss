@@ -1,3 +1,48 @@
 .main {
     
+    &__breadcrumbs {
+        padding-top: 20px;  // 20px
+        margin-bottom: 42px;  // 42px
+    }
+
+    &__breadcrumbs-list {
+        display: flex;
+        // gap: 8px;  // 8px
+        gap: 10px;  // 10px
+        align-items: center;
+
+    }
+
+    &__breadcrumbs-nav-link-with-arrow {
+        display: flex;
+        align-items: center;
+        // gap: 4px;  // 4px
+        gap: 10px;  // 10px
+        flex-shrink: 0;
+
+        // &:last-child {
+        //     max-width: 150px;  // 150px
+        // }
+
+        & > svg {
+            // width: 16px;  // 16px
+            // height: 16px;  // 16px
+        }
+    }
+
+    &__breadcrumbs-nav-link {
+        display: inline-block;
+        font-size: $fontSm;
+        line-height: 18px;  // 18px
+        letter-spacing: 0.25px;
+        color: #333333b3;
+
+        &:last-child {
+            max-width: 156px;  // 156px
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            pointer-events: none;
+        }
+    }
 }

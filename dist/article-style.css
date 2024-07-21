@@ -343,6 +343,36 @@ h1, h2, h3, h4, h5, h6 {
   animation: fade-out 200ms ease-in-out forwards;
 }
 
+.main__breadcrumbs {
+  padding-top: 20px;
+  margin-bottom: 42px;
+}
+.main__breadcrumbs-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.main__breadcrumbs-nav-link-with-arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.main__breadcrumbs-nav-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  color: rgba(51, 51, 51, 0.7019607843);
+}
+.main__breadcrumbs-nav-link:last-child {
+  max-width: 156px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
 .footer {
   padding-top: 2.1875rem;
   background-color: #2963A3;
