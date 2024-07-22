@@ -113,4 +113,54 @@
             text-decoration: underline;
         }
     }
+
+    &__article-content {
+
+        & h3 {
+            margin-bottom: 8px;  // 8px
+        }
+
+        & p {
+            font-weight: 500;
+            line-height: 24px;  // 24px
+            color: $secondColor;
+        }
+
+        & > P:nth-child(2) {
+            margin-bottom: 8px;  // 8px
+        }
+
+        & > P:nth-child(3) {
+            margin-bottom: 40px;  // 40px
+        }
+    }
+
+    &__bg-svg-and-text-1 {
+        position: relative;
+        padding: 16px;  // 16px
+        border-radius: 16px;  // 16px
+        background-color: #F3F7FE;
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 23px;  // 23px
+            height: 36px;  // 36px
+            background: url("/src/images/svg/icon-quote.svg") no-repeat;
+        }
+
+        & > p {
+
+            &:first-child {
+                margin-bottom: 8px;  // 8px
+                font-style: italic;
+            }
+
+            &:last-child {
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+    }
 }

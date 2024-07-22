@@ -425,6 +425,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
   text-decoration: underline;
 }
+.main__article-content h3 {
+  margin-bottom: 8px;
+}
+.main__article-content p {
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+}
+.main__article-content > P:nth-child(2) {
+  margin-bottom: 8px;
+}
+.main__article-content > P:nth-child(3) {
+  margin-bottom: 40px;
+}
+.main__bg-svg-and-text-1 {
+  position: relative;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #F3F7FE;
+}
+.main__bg-svg-and-text-1::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 23px;
+  height: 36px;
+  background: url("/src/images/svg/icon-quote.svg") no-repeat;
+}
+.main__bg-svg-and-text-1 > p:first-child {
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.main__bg-svg-and-text-1 > p:last-child {
+  font-weight: 700;
+  font-style: normal;
+}
 
 .footer {
   padding-top: 2.1875rem;
