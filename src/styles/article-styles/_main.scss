@@ -31,7 +31,7 @@
         color: #333333b3;
 
         &:last-child {
-            max-width: 9.75rem;  // 156px
+            max-width: 9.6875rem;  // 155px
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;  // Won't work without the above properties
@@ -53,16 +53,64 @@
 
     &__article-info-title {
         margin-bottom: 0.5rem;  // 8px
-        line-height: 32px;  // 32px
+        line-height: 2rem;  // 32px
     }
 
     &__article-info-text {
         font-size: $fontMd;
-        line-height: 20px;  // 20px
+        line-height: 1.25rem;  // 20px
         color: $thirdColor;
 
         & > span {
             color: $ninthColor;
+        }
+    }
+
+    &__img-wrapper {
+        margin-bottom: 1rem;  // 16px
+        height: 160px;  // 160px
+
+        & > img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__navigation {
+        margin-bottom: 1rem;  // 16px
+    }
+
+    &__navigation-heading {
+        margin-bottom: 8px;  // 8px
+        line-height: 24px;  // 24px
+    }
+
+    &__navigation-headline {
+        position: relative;
+        padding-left: 32px;  // 32px
+
+        &:first-child {
+            margin-bottom: 8px;  // 8px
+        }
+
+        &::before {
+            position: absolute;
+            display: block;
+            height: 8px;  // 8px
+            width: 8px;  // 8px
+            content: "";
+            top: 8px;  // 8px
+            left: 8px;  // 8px
+            border-radius: 50%;
+            background-color: $twelfthColor;
+
+        }
+
+        & > a {
+            font-weight: 500;
+            line-height: 24px;  // 24px
+            color: $secondColor;
+            text-decoration: underline;
         }
     }
 }
