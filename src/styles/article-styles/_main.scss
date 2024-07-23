@@ -41,6 +41,17 @@
         }
     }
 
+    // Helper class for box-shadow when hover over an element
+    .box-shadow-hover {
+        transition: box-shadow 200ms ease-in-out;
+
+        &:hover {
+            // transform: scale(1.050);
+            box-shadow: 0 0.1875rem 0.75rem #00000026;
+            background-color: $firstColor;
+        }
+    }
+
     &__breadcrumbs {
         margin: 1rem 0 2rem;  // 16px 32px
     }
@@ -297,7 +308,8 @@
     }
 
     &__aside-loading {
-        padding: 24px;  // 24px
+        margin-bottom: 1.5rem;  // 24px
+        padding: 1.5rem;  // 24px
         border-radius: 1rem;  // 16px
         background-color: #E6F0FD;
         text-align: center;
@@ -305,32 +317,148 @@
         & > h3 {
             margin-bottom: 0.5rem;  // 8px
             font-size: $fontLg;
-            line-height: 24px;
+            line-height: 1.5rem;  // 24px
         }
 
         & > p {
-            margin-bottom: 24px;  // 24px
+            margin-bottom: 1.5rem;  // 24px
             font-size: $fontMd;
-            line-height: 20px;  // 20px
+            line-height: 1.25rem;  // 20px
         }
     }
 
     &__aside-loading-bg-svg {
-        height: 206px;  // 206px
+        height: 12.875rem;  // 206px
         background-image: url("/src/images/svg/icon9.svg");
-        background-size: 239px;  // 239px
+        background-size: 14.9375rem;  // 239px
         background-repeat: no-repeat;
         background-position: center center;
     }
 
-    &__aside-button {
-        padding: 12px 70px;  // 12px 70px
-        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    &__aside-cta-btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 4.375rem;  // 12px 70px
+        text-align: center;
         font-weight: 700;
         font-size: $fontDft;
-        line-height: 24px;  // 24px
+        line-height: 1.5rem;  // 24px
         background-color: #35B3A9;
         color: $firstColor;
-        border-radius: 4px;  // 4px
+        border-radius: 0.25rem;  // 4px
+    }
+
+    &__aside-therapist {
+        position: relative;
+        display: flex;
+        padding: 1rem 1rem 2.25rem;  // 16px 16px 36px
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #DEDEDE;
+        border-radius: 1rem;  // 16px
+    }
+
+    &__aside-therapist-list {
+        position: absolute;
+        display: flex;
+        top: 16px;
+        left: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;  // 8px
+    }
+
+    &__aside-therapist-list-item {
+        font-size: $fontSm;
+        font-weight: 500;
+        line-height: 18px;  // 18px
+        letter-spacing: 0.25px;
+        color: $secondColor;
+        background-color: #f3f4f8b3;
+        border-radius: 6px;
+    }
+
+    &__aside-therapist-link {
+        display: flex;
+        padding: 3px 6px;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__aside-therapist-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;  // 16px
+
+        & > img {
+            margin-bottom: 1rem;  // 16px
+        }
+
+        & > h3 {
+            font-size: 20px;  // 20px
+            font-weight: 700;
+            line-height: 28px;
+        }
+
+        & > h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__aside-therapist-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & > p {
+            font-weight: 500;
+            font-size: $fontMd;
+            line-height: 20px;
+            color: #A2A7B1;
+        }
+
+        & > span {
+            display: block;
+            height: 4px;
+            width: 4px;
+            background-color: #A2A7B1;
+            border-radius: 50%;
+        }
+    }
+
+    &__aside-therapist-bottom {
+        width: 100%;
+        padding: 1rem 0 1rem 0;  // 16px
+        border-top: 1px solid #DEDEDE;
+
+        & > h4 {
+            margin-bottom: 8px;
+        }
+
+        & > ul li {
+            position: relative;
+            padding-left: 24px;
+            font-size: $fontMd;
+            line-height: 20px;
+            color: $secondColor;
+    
+            &::before {
+                position: absolute;
+                display: block;
+                height: 0.5rem;  // 8px
+                width: 0.5rem;  // 8px
+                content: "";
+                top: 7px;  // 7px
+                left: 6px;  // 6px
+                border-radius: 50%;
+                background-color: $twelfthColor;
+            }
+        }
+
+        & > ul li:not(:last-child) {
+            margin-bottom: 8px;
+        }
     }
 }
