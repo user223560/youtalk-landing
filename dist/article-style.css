@@ -521,6 +521,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
 }
+.main__svg-separator {
+  text-align: center;
+}
+.main__bg-and-text-3 {
+  background-color: rgba(3, 178, 165, 0.1019607843);
+}
 
 .footer {
   padding-top: 2.1875rem;
