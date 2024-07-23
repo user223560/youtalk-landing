@@ -346,6 +346,9 @@ h1, h2, h3, h4, h5, h6 {
 .main h4 {
   line-height: 1.5rem;
 }
+.main .mg-bottom {
+  margin-bottom: 1rem;
+}
 .main__breadcrumbs {
   margin: 1rem 0 2rem;
 }
@@ -516,6 +519,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: italic;
   text-align: center;
+}
+.main__img-and-text-row > div {
+  margin-bottom: 1rem;
+}
+.main__img-and-text-row > div:first-child {
+  height: 380px;
+  width: 288px;
+}
+.main__img-and-text-row img {
+  height: 100%;
+  width: 100%;
 }
 
 .footer {
