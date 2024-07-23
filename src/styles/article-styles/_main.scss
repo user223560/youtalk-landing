@@ -9,6 +9,38 @@
         margin-bottom: 1rem;  // 16px
     }
 
+    // Helper class for styling and positioning list elements
+    .list-style-pseudo {
+        position: relative;
+        padding-left: 2rem;  // 32px
+
+        &:first-child {
+            margin-bottom: 0.5rem;  // 8px
+        }
+
+        &::before {
+            position: absolute;
+            display: block;
+            height: 0.5rem;  // 8px
+            width: 0.5rem;  // 8px
+            content: "";
+            top: 0.5rem;  // 8px
+            left: 0.5rem;  // 8px
+            border-radius: 50%;
+            background-color: $twelfthColor;
+        }
+    }
+
+    // Helper class for styling cards with different background-color
+    .bg-color-card {
+        padding: 1rem;  //  16px
+        border-radius: 1rem;  // 16px
+
+        & > h4 {
+            margin-bottom: 0.5rem;  // 8px
+        }
+    }
+
     &__breadcrumbs {
         margin: 1rem 0 2rem;  // 16px 32px
     }
@@ -62,7 +94,7 @@
     }
 
     &__article-info {
-        margin-bottom: 1rem;  // 16px
+        // margin-bottom: 1rem;  // 16px
     }
 
     &__article-info-title {
@@ -81,7 +113,7 @@
     }
 
     &__img-wrapper {
-        margin-bottom: 1rem;  // 16px
+        // margin-bottom: 1rem;  // 16px
         height: 10rem;  // 160px
 
         & > img {
@@ -91,7 +123,7 @@
     }
 
     &__navigation {
-        margin-bottom: 1rem;  // 16px
+        // margin-bottom: 1rem;  // 16px
     }
 
     &__navigation-heading {
@@ -99,24 +131,24 @@
     }
 
     &__navigation-headline {
-        position: relative;
-        padding-left: 2rem;  // 32px
+        // position: relative;
+        // padding-left: 2rem;  // 32px
 
-        &:first-child {
-            margin-bottom: 0.5rem;  // 8px
-        }
+        // &:first-child {
+        //     margin-bottom: 0.5rem;  // 8px
+        // }
 
-        &::before {
-            position: absolute;
-            display: block;
-            height: 0.5rem;  // 8px
-            width: 0.5rem;  // 8px
-            content: "";
-            top: 0.5rem;  // 8px
-            left: 0.5rem;  // 8px
-            border-radius: 50%;
-            background-color: $twelfthColor;
-        }
+        // &::before {
+        //     position: absolute;
+        //     display: block;
+        //     height: 0.5rem;  // 8px
+        //     width: 0.5rem;  // 8px
+        //     content: "";
+        //     top: 0.5rem;  // 8px
+        //     left: 0.5rem;  // 8px
+        //     border-radius: 50%;
+        //     background-color: $twelfthColor;
+        // }
 
         & > a {
             text-decoration: underline;
@@ -148,7 +180,7 @@
 
     &__bg-svg-and-text-1 {
         position: relative;
-        margin-bottom: 1rem;  // 16px
+        // margin-bottom: 1rem;  // 16px
         padding: 1rem;  // 16px
         border-radius: 1rem;  // 16px
         background-color: #F3F7FE;
@@ -180,51 +212,43 @@
     &__article-content-subgroup-1 {
 
         & > ul {
-            margin-bottom: 1rem;  // 16px
+            // margin-bottom: 1rem;  // 16px
 
             & > li {
-                position: relative;
-                padding-left: 2rem;  // 32px
+                // position: relative;
+                // padding-left: 2rem;  // 32px
 
-                &:first-child {
-                    margin-bottom: 0.5rem;  // 8px
-                }
+                // &:first-child {
+                //     margin-bottom: 0.5rem;  // 8px
+                // }
 
-                &::before {
-                    position: absolute;
-                    display: block;
-                    height: 0.5rem;  // 8px
-                    width: 0.5rem;  // 8px
-                    content: "";
-                    top: 0.5rem;  // 8px
-                    left: 0.5rem;  // 8px
-                    border-radius: 50%;
-                    background-color: $twelfthColor;
-                }
+                // &::before {
+                //     position: absolute;
+                //     display: block;
+                //     height: 0.5rem;  // 8px
+                //     width: 0.5rem;  // 8px
+                //     content: "";
+                //     top: 0.5rem;  // 8px
+                //     left: 0.5rem;  // 8px
+                //     border-radius: 50%;
+                //     background-color: $twelfthColor;
+                // }
             }
         }
 
         & > p:nth-child(4) {
-            margin-bottom: 1rem;  // 16px
+            // margin-bottom: 1rem;  // 16px
             font-size: $fontMd;
             font-weight: 400;
             line-height: 130%;
             letter-spacing: 0.25px;
             color: $fifthColor;
         }
-
-        & > p:nth-child(5) {
-            margin-bottom: 1rem;  // 16px
-        }
-
-        & > p:nth-child(7) {
-            margin-bottom: 1rem;  // 16px
-        }
     }
 
     &__bg-svg-and-text-2 {
         // height: 176px;  // 176px
-        margin-bottom: 1rem;  // 16px
+        // margin-bottom: 1rem;  // 16px
         padding-top: 0.5rem;  // 8px
         background-image: url("/src/images/svg/icon21.svg");
         background-size: 15rem 10.5rem;  // 240px 168px
@@ -238,11 +262,7 @@
         }
     }
 
-    &__img-and-text-row {
-
-        & > div {
-            margin-bottom: 1rem;  // 16px
-        }
+    &__img-and-text-row-1 {
 
         & > div:first-child {
             height: 380px;  // 380px
@@ -252,6 +272,50 @@
         & img {
             height: 100%;
             width: 100%;
+        }
+    }
+
+    &__bg-and-text-1 {
+        // padding: 1rem;  //  16px
+        background-color: #FEFAEC;
+        // border-radius: 1rem;  // 16px
+
+        // & > h4 {
+        //     margin-bottom: 0.5rem;  // 8px
+        // }
+    }
+
+    &__article-content-subgroup-2 {
+
+    }
+
+    &__img-and-text-row-2 {
+        & > div:first-child {
+            height: 160px;  // 160px
+            width: 288px;  // 288px
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__bg-and-text-2 {
+        background-color: #FFF3EB;
+    }
+
+    &__img-and-text-column {
+
+        & > div:nth-child(odd) {
+            margin-bottom: 0.5rem;  // 8px
+            height: 235px;  // 235px
+            width: 288px;  // 288px
+
+            & > img {
+                height: 100%;
+                width: 100%;
+            } 
         }
     }
 }
