@@ -432,7 +432,7 @@
     &__aside-therapist-bottom {
         width: 100%;
         padding: 1rem 0 1rem 0;  // 16px
-        border-top: 1px solid #DEDEDE;
+        border-top: 1px solid $sixthColor;
 
         & > h4 {
             margin-bottom: 0.5rem; // 8px
@@ -494,7 +494,7 @@
             top: 6.9375rem;  // 111px
             right: 0;
             left: 0;
-            background-image: url("/src/images/svg/icon-blue-box.svg");
+            // background-image: url("/src/images/svg/icon-blue-box.svg");
             background-repeat: no-repeat;
             background-position: right bottom;
         }
@@ -505,7 +505,7 @@
             top: 7.875rem;  // 126px
             right: 0;
             left: 0.8125rem;  // 13px
-            background-image: url("/src/images/svg/icon-yellow-box.svg");
+            // background-image: url("/src/images/svg/icon-yellow-box.svg");
             background-repeat: no-repeat;
             background-position: left bottom;
         }
@@ -516,9 +516,79 @@
             right: 0;
             left: 0;
             height: 8.5rem;  // 136px
-            background-image: url("/src/images/svg/icon-red-box.svg");
+            // background-image: url("/src/images/svg/icon-red-box.svg");
             background-repeat: no-repeat;
             background-position: right bottom;
         }
+    }
+
+    &__aside-buy {
+        position: relative;
+        margin-bottom: 3.75rem;  // 60px
+        padding: 1rem;  // 16px
+        overflow: hidden;
+        border: 1px solid $sixthColor;
+        border-radius: 1.5rem;  // 24px
+
+        & > div:nth-child(5) {
+            position: absolute;
+            height: 5.125rem;  // 82px
+            width: 5.375rem;  // 86px
+            top: 11.75rem;  // 188px
+            left: 9.875rem;  // 158px
+            background-repeat: no-repeat;
+        }
+
+        & > div:nth-child(6) {
+            position: absolute;
+            height: 5.875rem;  // 94px
+            width: 6.5625rem;  // 105px
+            top: 12.3125rem;  // 197px
+            left: 11.3125rem;  // 181px
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__aside-buy-title {
+        display: flex;
+        align-items: baseline;
+        gap: 0.25rem;  // 4px
+        color: $ninthColor;
+
+        & > p:first-child {
+            font-size: $fontXlg;
+            font-weight: 700;
+            line-height: 2rem;  // 32px
+        }
+
+        & > p:last-child {
+            font-size: $fontLg;
+            font-weight: 700;
+            line-height: 1.625rem;  // 26px
+        }
+    }
+
+    &__aside-buy-text {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: $fontMd;
+        line-height: 1.25rem;  // 20px
+        color: #011632;
+    }
+
+    &__aside-buy-price {
+        font-size: $fontXlg;
+        font-weight: 700;
+        line-height: 2rem;  // 32px
+        color: $secondColor;
+    }
+
+    &__aside-buy-cta-btn {
+        display: inline-block;
+        padding: 0.75rem 1.4375rem;  // 12px 23px
+        border-radius: 4px;  //  4px
+        background-color: #35B3A9;
+        font-weight: 700;
+        line-height: 1.5rem;  // 24px
+        color: $firstColor;
     }
 }
