@@ -670,24 +670,57 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 .main__aside-gift {
-  height: 292px;
+  height: 18.25rem;
   margin-bottom: 1.5rem;
+  overflow: hidden;
   border-radius: 1rem;
   background-color: #2963A3;
   background-image: url("/src/images/svg/icon14.svg");
-  background-size: 288px;
   background-repeat: no-repeat;
   background-position: center top;
 }
-.main__aside-gift > a {
+.main__aside-gift-link {
+  position: relative;
   display: block;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 3.75rem;
   text-align: center;
+}
+.main__aside-gift-link > p {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 2.5rem;
   color: #FFFFFF;
+}
+.main__aside-gift-link > div:nth-child(2) {
+  position: absolute;
+  height: 11.3125rem;
+  top: 6.9375rem;
+  right: 0;
+  left: 0;
+  background-image: url("/src/images/svg/icon-blue-box.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.main__aside-gift-link > div:nth-child(3) {
+  position: absolute;
+  height: 10.375rem;
+  top: 7.875rem;
+  right: 0;
+  left: 0.8125rem;
+  background-image: url("/src/images/svg/icon-yellow-box.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.main__aside-gift-link > div:nth-child(4) {
+  position: absolute;
+  top: 9.75rem;
+  right: 0;
+  left: 0;
+  height: 8.5rem;
+  background-image: url("/src/images/svg/icon-red-box.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .footer {
