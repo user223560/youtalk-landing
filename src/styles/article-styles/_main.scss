@@ -41,7 +41,7 @@
         }
     }
 
-    // Helper class for box-shadow when hover over an element
+    // Helper class for box-shadow when hovering over an element
     .box-shadow-hover {
         transition: box-shadow 200ms ease-in-out;
 
@@ -351,6 +351,7 @@
     &__aside-therapist {
         position: relative;
         display: flex;
+        margin-bottom: 1.5rem;  // 24px
         padding: 1rem 1rem 2.25rem;  // 16px 16px 36px
         flex-direction: column;
         align-items: center;
@@ -361,28 +362,28 @@
     &__aside-therapist-list {
         position: absolute;
         display: flex;
-        top: 16px;
-        left: 16px;
+        top: 1rem;  // 16px
+        left: 1rem;  // 16px
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;  // 8px
+        gap: 0.5rem;  // 8px
     }
 
     &__aside-therapist-list-item {
         font-size: $fontSm;
         font-weight: 500;
-        line-height: 18px;  // 18px
+        line-height: 1.125rem;  // 18px
         letter-spacing: 0.25px;
         color: $secondColor;
         background-color: #f3f4f8b3;
-        border-radius: 6px;
+        border-radius: 0.375rem;  // 6px
     }
 
     &__aside-therapist-link {
         display: flex;
-        padding: 3px 6px;
+        padding: 0.1875rem 0.375rem;  // 3px 6px
         align-items: center;
-        gap: 4px;
+        gap: 0.25rem;  // 4px
     }
 
     &__aside-therapist-top {
@@ -396,33 +397,33 @@
         }
 
         & > h3 {
-            font-size: 20px;  // 20px
+            font-size: 1.25rem;  // 20px
             font-weight: 700;
-            line-height: 28px;
+            line-height: 1.75rem;  // 28px
         }
 
         & > h4 {
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 0.25rem; // 4px
         }
     }
 
     &__aside-therapist-info {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem; // 8px
 
         & > p {
             font-weight: 500;
             font-size: $fontMd;
-            line-height: 20px;
+            line-height: 1.25rem; // 20px
             color: #A2A7B1;
         }
 
         & > span {
             display: block;
-            height: 4px;
-            width: 4px;
+            height: 0.25rem; // 4px
+            width: 0.25rem;  // 4px
             background-color: #A2A7B1;
             border-radius: 50%;
         }
@@ -434,14 +435,14 @@
         border-top: 1px solid #DEDEDE;
 
         & > h4 {
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem; // 8px
         }
 
         & > ul li {
             position: relative;
-            padding-left: 24px;
+            padding-left: 1.5rem;  // 24px
             font-size: $fontMd;
-            line-height: 20px;
+            line-height: 1.25rem;  // 20px
             color: $secondColor;
     
             &::before {
@@ -450,15 +451,37 @@
                 height: 0.5rem;  // 8px
                 width: 0.5rem;  // 8px
                 content: "";
-                top: 7px;  // 7px
-                left: 6px;  // 6px
+                top: 0.4375rem;  // 7px
+                left: 0.375rem;  // 6px
                 border-radius: 50%;
                 background-color: $twelfthColor;
             }
         }
 
         & > ul li:not(:last-child) {
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;  // 8px
+        }
+    }
+
+    &__aside-gift {
+        height: 292px;  // 292px
+        margin-bottom: 1.5rem;  // 24px
+        border-radius: 1rem;  // 16px
+        background-color: $ninthColor;
+        background-image: url("/src/images/svg/icon14.svg");
+        background-size: 288px;  // 288px
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        & > a {
+            display: block;
+            height: 100%;
+            padding-top: 60px;  // 60px
+            text-align: center;
+            font-size: $fontXxlg;
+            font-weight: 700;
+            line-height: 40px;  // 40px
+            color: $firstColor;
         }
     }
 }
