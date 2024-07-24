@@ -102,6 +102,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.hide-for-iphonepromax-and-bigger {
+    @include breakpoint-up(iphonepromax) {
+        display: none;
+    }
+}
+
 .hide-for-ipadpro-and-bigger {
     @include breakpoint-up(ipadpro) {
         display: none;
