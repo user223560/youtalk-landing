@@ -757,6 +757,11 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center top;
 }
+@media (min-width: 25.875em) {
+  .main__aside-gift {
+    background-position: left top;
+  }
+}
 .main__aside-gift-link {
   position: relative;
   display: block;
@@ -776,6 +781,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 6.9375rem;
   right: 0;
   left: 0;
+  background-image: url("/src/images/svg/icon-blue-box.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -785,15 +791,17 @@ h1, h2, h3, h4, h5, h6 {
   top: 7.875rem;
   right: 0;
   left: 0.8125rem;
+  background-image: url("/src/images/svg/icon-yellow-box.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
 }
 .main__aside-gift-link > div:nth-child(4) {
   position: absolute;
+  height: 8.5rem;
   top: 9.75rem;
   right: 0;
   left: 0;
-  height: 8.5rem;
+  background-image: url("/src/images/svg/icon-red-box.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }

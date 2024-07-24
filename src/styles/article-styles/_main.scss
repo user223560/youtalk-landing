@@ -531,6 +531,10 @@
         background-image: url("/src/images/svg/icon14.svg");
         background-repeat: no-repeat;
         background-position: center top;
+
+        @include breakpoint-up(iphonepromax) {
+            background-position: left top;
+        }
     }
 
     &__aside-gift-link {
@@ -553,7 +557,7 @@
             top: 6.9375rem;  // 111px
             right: 0;
             left: 0;
-            // background-image: url("/src/images/svg/icon-blue-box.svg");
+            background-image: url("/src/images/svg/icon-blue-box.svg");
             background-repeat: no-repeat;
             background-position: right bottom;
         }
@@ -564,18 +568,18 @@
             top: 7.875rem;  // 126px
             right: 0;
             left: 0.8125rem;  // 13px
-            // background-image: url("/src/images/svg/icon-yellow-box.svg");
+            background-image: url("/src/images/svg/icon-yellow-box.svg");
             background-repeat: no-repeat;
             background-position: left bottom;
         }
 
         & > div:nth-child(4) {
             position: absolute;
+            height: 8.5rem;  // 136px
             top: 9.75rem;  // 156px
             right: 0;
             left: 0;
-            height: 8.5rem;  // 136px
-            // background-image: url("/src/images/svg/icon-red-box.svg");
+            background-image: url("/src/images/svg/icon-red-box.svg");
             background-repeat: no-repeat;
             background-position: right bottom;
         }
