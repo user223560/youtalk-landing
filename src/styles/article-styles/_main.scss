@@ -44,6 +44,10 @@
         padding: 1rem;  //  16px
         border-radius: 1rem;  // 16px
 
+        @include breakpoint-up(ipadmini) {
+            padding: 1.5rem;  // 24px
+        }
+
         & > h4 {
             margin-bottom: 0.5rem;  // 8px
         }
@@ -327,6 +331,13 @@
 
     &__img-and-text-row-1 {
 
+        @include breakpoint-up(ipadmini) {
+            display: flex;
+            height: 23.75rem;  // 380px
+            margin-bottom: 1.5rem;  // 24px
+            gap: 1rem;  // 16px
+        }
+
         & > div:first-child {
             height: 23.75rem;  // 380px
             width: 18rem;  // 288px
@@ -334,6 +345,21 @@
 
             @include breakpoint-up(iphonepromax) {
                 width: 22.875rem;  // 366px
+            }
+
+            @include breakpoint-up(ipadmini) {
+                height: 100%;
+                margin-bottom: 0;
+                flex: 1;
+            }
+        }
+
+        & > div:last-child {
+            
+            @include breakpoint-up(ipadmini) {
+                height: 100%;
+                margin-bottom: 0;
+                flex: 1;
             }
         }
 
@@ -352,6 +378,14 @@
     }
 
     &__img-and-text-row-2 {
+
+        @include breakpoint-up(ipadmini) {
+            display: flex;
+            height: 11.375rem;  // 182px
+            margin-bottom: 1.5rem;  // 24px
+            gap: 1rem;  // 16px
+        }
+
         & > div:first-child {
             height: 10rem;  // 160px
             width: 18rem;  // 288px
@@ -360,6 +394,21 @@
             @include breakpoint-up(iphonepromax) {
                 height: 12.9375rem;  // 207px
                 width: 22.875rem;  // 366px
+            }
+
+            @include breakpoint-up(ipadmini) {
+                width: 18.375rem;  // 294px
+                height: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        & > div:last-child {
+            
+            @include breakpoint-up(ipadmini) {
+                width: 26.125rem;  // 418px
+                height: 100%;
+                margin-bottom: 0;
             }
         }
 
