@@ -778,12 +778,22 @@ h1, h2, h3, h4, h5, h6 {
 .main__aside-gift-link > div:nth-child(2) {
   position: absolute;
   height: 11.3125rem;
+  width: 11.875rem;
   top: 6.9375rem;
   right: 0;
-  left: 0;
+  left: 6.1875rem;
   background-image: url("/src/images/svg/icon-blue-box.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
+}
+@media (min-width: 25.875em) {
+  .main__aside-gift-link > div:nth-child(2) {
+    top: 7.5rem;
+    left: 8.9375rem;
+    background-image: url("/src/images/svg/icon-blue-box-full.svg");
+    background-size: contain;
+    background-position: bottom;
+  }
 }
 .main__aside-gift-link > div:nth-child(3) {
   position: absolute;
@@ -800,10 +810,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 8.5rem;
   top: 9.75rem;
   right: 0;
-  left: 0;
+  left: 12.375rem;
   background-image: url("/src/images/svg/icon-red-box.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
+}
+@media (min-width: 25.875em) {
+  .main__aside-gift-link > div:nth-child(4) {
+    left: 12.875rem;
+    background-image: url("/src/images/svg/icon-red-box-414px.svg");
+    background-position: bottom;
+  }
 }
 .main__aside-buy {
   position: relative;
