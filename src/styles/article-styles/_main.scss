@@ -610,6 +610,11 @@
         border: 1px solid $sixthColor;
         border-radius: 1.5rem;  // 24px
 
+        @include breakpoint-up(iphonepromax) {
+            padding: 1.5rem;  // 24px
+            margin-bottom: 7.9375rem;  // 127px
+        }
+
         & > div:nth-child(5) {
             position: absolute;
             height: 5.125rem;  // 82px
@@ -617,6 +622,14 @@
             top: 11.75rem;  // 188px
             left: 9.875rem;  // 158px
             background-repeat: no-repeat;
+
+            @include breakpoint-up(iphonepromax) {
+                top: 11.8125rem; // 189px
+                left: 11.75rem;  // 188px
+                width: 7rem;  // 112px
+                height: 6.625rem;  // 106px
+                background-size: contain;
+            }
         }
 
         & > div:nth-child(6) {
@@ -626,6 +639,14 @@
             top: 12.3125rem;  // 197px
             left: 11.3125rem;  // 181px
             background-repeat: no-repeat;
+
+            @include breakpoint-up(iphonepromax) {
+                top: 12.5rem;  // 200px
+                left: 13.5625rem;  // 217px
+                width: 8.5625rem;  // 137px
+                height: 7.5625rem;  // 121px
+                background-size: contain;
+            }
         }
     }
 
