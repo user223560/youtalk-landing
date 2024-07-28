@@ -502,6 +502,31 @@
 
     &__aside {
 
+        @include breakpoint-up(ipadmini) {
+            // display: grid;
+            // grid-column-gap: 1rem; // 16px
+            // grid-row-gap: 1.875rem;  // 30px
+            // grid-template-areas: 
+            //     "loading therapist"
+            //     "gift buy";
+            // grid-template-columns: repeat(2, 356px);  // 356px
+
+            display: flex;
+            margin-bottom: 3.6875rem;  // 59px
+            flex-direction: column;
+            gap: 1.875rem;  // 30px
+        }
+    }
+
+    &__aside-col-1 {
+        margin-bottom: 1.5rem;  // 24px
+
+        @include breakpoint-up(ipadmini) {
+            display: flex;
+            height: 30.0625rem;  // 481px
+            margin-bottom: 0;
+            gap: 1rem;  // 16px
+        }
     }
 
     &__aside-loading {
@@ -513,6 +538,13 @@
 
         @include breakpoint-up(iphonepromax) {
             padding: 1.5rem 2rem 2.75rem; // 24px 32px 44px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            // grid-area: loading;
+            height: 100%;
+            width: 22.25rem;  // 356px
+            margin-bottom: 0;
         }
 
         & > h3 {
@@ -552,7 +584,6 @@
     &__aside-therapist {
         position: relative;
         display: flex;
-        margin-bottom: 1.5rem;  // 24px
         padding: 1rem 1rem 2.25rem;  // 16px 16px 36px
         flex-direction: column;
         align-items: center;
@@ -561,6 +592,12 @@
 
         @include breakpoint-up(iphonepromax) {
             padding: 1.5rem 3.875rem 2.25rem; // 24px 62px 36px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            // grid-area: therapist;
+            height: 100%;
+            width: 22.25rem;  // 356px
         }
     }
 
@@ -668,6 +705,21 @@
         }
     }
 
+    &__aside-col-2 {
+        margin-bottom: 3.75rem;  // 60px
+
+        @include breakpoint-up(iphonepromax) {
+            margin-bottom: 7.9375rem;  // 127px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            display: flex;
+            height: 15.5rem; // 248px
+            margin-bottom: 0;
+            gap: 1rem;  // 16px
+        }
+    }
+
     &__aside-gift {
         height: 18.25rem;  // 292px
         margin-bottom: 1.5rem;  // 24px
@@ -680,6 +732,13 @@
 
         @include breakpoint-up(iphonepromax) {
             background-position: left top;
+        }
+
+        @include breakpoint-up(ipadmini) {
+            // grid-area: gift;
+            height: 100%;
+            width: 22.25rem;  // 356px
+            margin-bottom: 0;
         }
     }
 
@@ -715,6 +774,10 @@
                 background-size: contain;
                 background-position: bottom;
             }
+
+            @include breakpoint-up(ipadmini) {
+                top: 5.625rem;  // 90px
+            }
         }
 
         & > div:nth-child(3) {
@@ -727,6 +790,10 @@
             background-image: url("/src/images/svg/icon-yellow-box.svg");
             background-repeat: no-repeat;
             background-position: left bottom;
+
+            @include breakpoint-up(ipadmini) {
+                top: 7.125rem;  // 114px
+            }
         }
 
         & > div:nth-child(4) {
@@ -745,12 +812,16 @@
                 background-image: url("/src/images/svg/icon-red-box-414px.svg");
                 background-position: bottom;
             }
+
+            @include breakpoint-up(ipadmini) {
+                top: 8.875rem;  // 142px
+                left: 14.1875rem;  // 227px
+            }
         }
     }
 
     &__aside-buy {
         position: relative;
-        margin-bottom: 3.75rem;  // 60px
         padding: 1rem;  // 16px
         overflow: hidden;
         border: 1px solid $sixthColor;
@@ -758,7 +829,13 @@
 
         @include breakpoint-up(iphonepromax) {
             padding: 1.5rem;  // 24px
-            margin-bottom: 7.9375rem;  // 127px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            // grid-area: buy;
+            height: 100%;
+            width: 22.25rem;  // 356px
+            // padding-bottom: 0.1875rem;  // 3px
         }
 
         & > div:nth-child(5) {
@@ -775,6 +852,11 @@
                 top: 11.8125rem; // 189px
                 left: 11.75rem;  // 188px
                 background-size: contain;
+            }
+
+            @include breakpoint-up(ipadmini) {
+                top: 10.1875rem; // 163px
+                left: 10.3125rem;  // 165px
             }
         }
 
@@ -793,14 +875,28 @@
                 left: 13.5625rem;  // 217px
                 background-size: contain;
             }
+
+            @include breakpoint-up(ipadmini) {
+                top: 10.9375rem; // 175px
+                left: 12.125rem;  // 194px
+            }
         }
     }
 
     &__aside-buy-title {
         display: flex;
+        margin-bottom: 1rem;  // 16px
         align-items: baseline;
         gap: 0.25rem;  // 4px
         color: $ninthColor;
+
+        @include breakpoint-up(iphonepromax) {
+            margin-bottom: 1.5rem;  // 24px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            margin-bottom: 1rem;  // 16p
+        }
 
         & > p:first-child {
             font-size: $fontXlg;
@@ -816,23 +912,41 @@
     }
 
     &__aside-buy-text {
+        margin-bottom: 1rem;  // 16px
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: $fontMd;
         line-height: 1.25rem;  // 20px
         color: #011632;
+
+        @include breakpoint-up(iphonepromax) {
+            margin-bottom: 1.5rem;  // 24px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            margin-bottom: 1rem;  // 16p
+        }
     }
 
     &__aside-buy-price {
+        margin-bottom: 1rem;  // 16px
         font-size: $fontXlg;
         font-weight: 700;
         line-height: 2rem;  // 32px
         color: $secondColor;
+
+        @include breakpoint-up(iphonepromax) {
+            margin-bottom: 1.5rem;  // 24px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            margin-bottom: 1rem;  // 16p
+        }
     }
 
     &__aside-buy-cta-btn {
         display: inline-block;
         padding: 0.75rem 1.4375rem;  // 12px 23px
-        border-radius: 4px;  //  4px
+        border-radius: 0.25rem;  //  4px
         background-color: #35B3A9;
         font-weight: 700;
         line-height: 1.5rem;  // 24px
