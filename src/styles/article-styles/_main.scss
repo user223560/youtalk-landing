@@ -121,6 +121,10 @@
 
     &__flex-container {
 
+        @include breakpoint-up(ipadpro) {
+            display: flex;
+            gap: 1.5rem;  // 24px
+        }
     }
 
     &__article {
@@ -129,6 +133,10 @@
             font-weight: 500;
             line-height: 1.5rem;  // 24px
             color: $secondColor;
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 714px;  // 714px
         }
     }
 
@@ -516,6 +524,11 @@
             flex-direction: column;
             gap: 1.875rem;  // 30px
         }
+
+        @include breakpoint-up(ipadpro) {
+            width: 222px;  // 222px
+            margin-bottom: 0;
+        }
     }
 
     &__aside-col-1 {
@@ -526,6 +539,13 @@
             height: 30.0625rem;  // 481px
             margin-bottom: 0;
             gap: 1rem;  // 16px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            gap: 1.5rem;  // 24px
         }
     }
 
@@ -547,6 +567,12 @@
             margin-bottom: 0;
         }
 
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: 495px;  // 495px
+            padding: 19px 24px;  // 19px 24px
+        }
+
         & > h3 {
             margin-bottom: 0.6875rem;  // 11x
             font-size: $fontLg;
@@ -562,10 +588,22 @@
 
     &__aside-loading-bg-svg {
         height: 12.875rem;  // 206px
+        margin-bottom: 1rem;  // 16px
         background-image: url("/src/images/svg/icon9.svg");
         // background-size: 14.9375rem;  // 239px
         background-repeat: no-repeat;
         background-position: center center;
+
+        @include breakpoint-up(iphonepromax) {
+            margin-bottom: 1.5rem;  // 24px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 181px;  // 181px
+            height: 181px; // 181px
+            margin-bottom: 0;
+            background-size: contain;
+        }
     }
 
     &__aside-cta-btn {
@@ -579,6 +617,10 @@
         background-color: #35B3A9;
         color: $firstColor;
         border-radius: 0.25rem;  // 4px
+
+        @include breakpoint-up(ipadpro) {
+            padding: 12px 41px;  // 12px 41px
+        }
     }
 
     &__aside-therapist {
@@ -598,6 +640,12 @@
             // grid-area: therapist;
             height: 100%;
             width: 22.25rem;  // 356px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: 530px;  // 530px
+            padding: 24px 24px 16px;  // 24px 24px 16px
         }
     }
 
@@ -718,6 +766,13 @@
             margin-bottom: 0;
             gap: 1rem;  // 16px
         }
+
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            gap: 1.5rem;  // 24px
+        }
     }
 
     &__aside-gift {
@@ -739,6 +794,11 @@
             height: 100%;
             width: 22.25rem;  // 356px
             margin-bottom: 0;
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: 308px;  // 308px
         }
     }
 
@@ -836,6 +896,12 @@
             height: 100%;
             width: 22.25rem;  // 356px
             // padding-bottom: 0.1875rem;  // 3px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            width: 100%;
+            height: 308px;  // 308px
+            padding: 19px 24px;  // 19px 24px
         }
 
         & > div:nth-child(5) {
