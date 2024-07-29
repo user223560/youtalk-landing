@@ -136,7 +136,7 @@
         }
 
         @include breakpoint-up(ipadpro) {
-            width: 714px;  // 714px
+            width: 44.625rem;  // 714px
         }
     }
 
@@ -526,8 +526,9 @@
         }
 
         @include breakpoint-up(ipadpro) {
-            width: 222px;  // 222px
+            width: 13.875rem;  // 222px
             margin-bottom: 0;
+            gap: 1.5rem;  // 24px
         }
     }
 
@@ -569,8 +570,9 @@
 
         @include breakpoint-up(ipadpro) {
             width: 100%;
-            height: 495px;  // 495px
-            padding: 19px 24px;  // 19px 24px
+            // height: 495px;  // 495px
+            height: auto;
+            padding: 1.1875rem 1.5rem;  // 19px 24px
         }
 
         & > h3 {
@@ -599,8 +601,8 @@
         }
 
         @include breakpoint-up(ipadpro) {
-            width: 181px;  // 181px
-            height: 181px; // 181px
+            width: 11.3125rem;  // 181px
+            height: 11.3125rem; // 181px
             margin-bottom: 0;
             background-size: contain;
         }
@@ -619,7 +621,7 @@
         border-radius: 0.25rem;  // 4px
 
         @include breakpoint-up(ipadpro) {
-            padding: 12px 41px;  // 12px 41px
+            padding: 0.75rem 2.5625rem;  // 12px 41px
         }
     }
 
@@ -644,8 +646,9 @@
 
         @include breakpoint-up(ipadpro) {
             width: 100%;
-            height: 530px;  // 530px
-            padding: 24px 24px 16px;  // 24px 24px 16px
+            // height: 523px;  // 523px
+            height: auto;
+            padding: 1.5rem 1.5rem 1rem;  // 24px 24px 16px
         }
     }
 
@@ -721,7 +724,7 @@
 
     &__aside-therapist-bottom {
         width: 100%;
-        padding: 1rem 0 1rem 0;  // 16px
+        padding: 1rem 0;  // 16px
         border-top: 1px solid $sixthColor;
 
         & > h4 {
@@ -798,7 +801,10 @@
 
         @include breakpoint-up(ipadpro) {
             width: 100%;
-            height: 308px;  // 308px
+            // height: 308px;  // 308px
+            // height: auto;
+            height: 18.25rem;  // 292px
+            background-position: center top;
         }
     }
 
@@ -838,6 +844,12 @@
             @include breakpoint-up(ipadmini) {
                 top: 5.625rem;  // 90px
             }
+
+            @include breakpoint-up(ipadpro) {
+                top: 6.9375rem;  // 111px
+                left: 3.25rem;  // 52px
+                background-size: auto;
+            }
         }
 
         & > div:nth-child(3) {
@@ -853,6 +865,12 @@
 
             @include breakpoint-up(ipadmini) {
                 top: 7.125rem;  // 114px
+            }
+
+            @include breakpoint-up(ipadpro) {
+                top: 7.875rem;  // 126px
+                left: -2.5rem;  // -40px
+                background-image: url("/src/images/svg/yellow-box-desktop.svg");
             }
         }
 
@@ -877,6 +895,13 @@
                 top: 8.875rem;  // 142px
                 left: 14.1875rem;  // 227px
             }
+
+            @include breakpoint-up(ipadpro) {
+                width: 5.625rem;  // 90px
+                top: 9.8125rem;  // 157px
+                left: 9rem;  // 144px
+                background-image: url("/src/images/svg/red-box-desktop.svg");
+            }
         }
     }
 
@@ -900,8 +925,9 @@
 
         @include breakpoint-up(ipadpro) {
             width: 100%;
-            height: 308px;  // 308px
-            padding: 19px 24px;  // 19px 24px
+            // height: 308px;  // 308px
+            height: auto; 
+            padding: 1.1875rem 1.5rem;  // 19px 24px
         }
 
         & > div:nth-child(5) {
@@ -924,6 +950,11 @@
                 top: 10.1875rem; // 163px
                 left: 10.3125rem;  // 165px
             }
+
+            @include breakpoint-up(ipadpro) {
+                top: 13.4375rem;  // 215px
+                left: 7.9375rem;  // 127px
+            }
         }
 
         & > div:nth-child(6) {
@@ -945,6 +976,11 @@
             @include breakpoint-up(ipadmini) {
                 top: 10.9375rem; // 175px
                 left: 12.125rem;  // 194px
+            }
+
+            @include breakpoint-up(ipadpro) {
+                top: 14.125rem;  // 226px
+                left: 9rem;  // 144px
             }
         }
     }
