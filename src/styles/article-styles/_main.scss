@@ -350,6 +350,10 @@
             gap: 1rem;  // 16px
         }
 
+        @include breakpoint-up(ipadpro) {
+            gap: 1.5rem;  // 24px
+        }
+
         & > div:first-child {
             height: 23.75rem;  // 380px
             width: 18rem;  // 288px
@@ -361,8 +365,13 @@
 
             @include breakpoint-up(ipadmini) {
                 height: 100%;
+                width: 18.375rem;  // 294px
                 margin-bottom: 0;
-                flex: 1;
+                flex: 0 0 auto;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                width: 17.625rem; // 282px
             }
         }
 
@@ -371,7 +380,7 @@
             @include breakpoint-up(ipadmini) {
                 height: 100%;
                 margin-bottom: 0;
-                flex: 1;
+                flex: 0 1 auto;
             }
         }
 
@@ -387,6 +396,9 @@
 
     &__article-content-subgroup-2 {
 
+        @include breakpoint-up(ipadpro) {
+            margin-bottom: 4.4375rem;  // 71px
+        }
     }
 
     &__img-and-text-row-2 {
@@ -396,6 +408,11 @@
             height: 11.375rem;  // 182px
             margin-bottom: 1.5rem;  // 24px
             gap: 1rem;  // 16px
+        }
+
+        @include breakpoint-up(ipadpro) {
+            height: 10.875rem;  // 174px
+            gap: 1.5rem;  // 24px
         }
 
         & > div:first-child {
@@ -413,6 +430,10 @@
                 height: 100%;
                 margin-bottom: 0;
             }
+
+            @include breakpoint-up(ipadpro) {
+                width: 17.5625rem;  // 281px
+            }
         }
 
         & > div:last-child {
@@ -421,6 +442,10 @@
                 width: 26.125rem;  // 418px
                 height: 100%;
                 margin-bottom: 0;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                width: 25.5625rem;  // 409px
             }
         }
 
@@ -464,6 +489,10 @@
             }
         }
 
+        @include breakpoint-up(ipadpro) {
+            grid-column-gap: 1.5rem; // 24px
+        }
+
         & > div:nth-child(even) {
             margin-bottom: 1rem;  // 16px
 
@@ -491,6 +520,10 @@
                 height: 14.6875rem;  // 235px
                 width: 22.25rem;  // 356px
                 margin-bottom: 0;
+            }
+
+            @include breakpoint-up(ipadpro) {
+                width: 21.5625rem;  // 345px
             }
 
             & > img {
