@@ -255,6 +255,10 @@
             margin-bottom: 1.5rem;  // 24px
         }
 
+        @include breakpoint-up(desktop) {
+            margin-bottom: 0;
+        }
+
         & h3 {
             margin-bottom: 0.5rem;  // 8px
             font-size: 1.125rem;  // 18px
@@ -463,7 +467,7 @@
         }
 
         @include breakpoint-up(desktop) {
-            margin-bottom: 0;
+            margin-bottom: 3rem;  // 48px
         }
     }
 
@@ -613,6 +617,31 @@
 
     &__bg-and-text-3 {
         background-color: #03b2a51a;
+
+        @include breakpoint-up(desktop) {
+            margin-bottom: 1.5rem;  // 24px
+        }
+    }
+
+    &__desktop-bottom-tags {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;  // 4px
+
+        & div {
+            display: flex;
+            gap: 0.5rem;  // 8px
+            font-size: $fontMd;
+            line-height: 1.25rem;  // 20px
+            color: $secondColor;
+
+            & a {
+                &:hover {
+                    color: $ninthColor;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     &__aside {
