@@ -168,7 +168,7 @@
         }
     }
 
-    &__img-wrapper {
+    &__img-wrapper-1 {
         margin-bottom: 1rem;  // 16px
         height: 10rem;  // 160px
 
@@ -355,6 +355,25 @@
         }
     }
 
+    &__img-wrapper-2 {
+        margin-bottom: 1rem;  // 16px
+        height: 10rem;  // 160px
+
+        @include breakpoint-up(iphonepromax) {
+            height: 12.9375rem;  // 207px
+        }
+
+        @include breakpoint-up(ipadmini) {
+            height: 20.6875rem;  // 331px
+            // margin-bottom: 0.75rem;  // 12px
+        }
+
+        & > img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
     &__bg-svg-and-text-2 {
         height: 11rem;  // 176px
         padding-top: 0.5rem;  // 8px
@@ -421,6 +440,10 @@
                 margin-bottom: 0;
                 flex: 0 1 auto;
             }
+
+            @include breakpoint-up(desktop) {
+                width: 24.0625rem;  // 385px
+            }
         }
 
         & img {
@@ -437,6 +460,10 @@
 
         @include breakpoint-up(ipadpro) {
             margin-bottom: 4.4375rem;  // 71px
+        }
+
+        @include breakpoint-up(desktop) {
+            margin-bottom: 0;
         }
     }
 
@@ -484,7 +511,11 @@
             }
 
             @include breakpoint-up(ipadpro) {
-                width: 17.5625rem;  // 409px
+                width: 25.5625rem;  // 409px
+            }
+
+            @include breakpoint-up(desktop) {
+                width: 24.125rem;  // 386px
             }
         }
 
@@ -563,6 +594,10 @@
 
             @include breakpoint-up(ipadpro) {
                 width: 21.5625rem;  // 345px
+            }
+
+            @include breakpoint-up(desktop) {
+                width: 20.8125rem;  // 333px
             }
 
             & > img {
