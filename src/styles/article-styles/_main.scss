@@ -1261,4 +1261,46 @@
             background-color: #03a093;
         }
     }
+
+    &__help-find-bordered {
+        padding: 4.4375rem 0 9.875rem;  // 71px 158px
+        border-top: 1px solid $sixthColor;
+    }
+
+    &__help-find-contents {
+
+    }
+
+    &__help-find-h1 {
+        margin-bottom: 1.5rem;  // 24px
+        font-weight: 700;
+        font-size: $fontLgst;
+        line-height: 3.5rem;  // 56px
+        color: $secondColor;
+    }
+
+    &__help-find-txt {
+        margin-bottom: 2rem;  // 32px
+        font-size: $fontLg;
+        line-height: 1.625rem;  // 26px
+        color: $secondColor;
+    }
+
+    &__help-find-cta {
+        display: inline-block;
+        padding: 1.25rem 1.5rem;  // 20px 24px
+        border-radius: 0.25rem;  // 4px
+        background-color: #35B3A9;
+        font-weight: 700;
+        color: $firstColor;
+        transition: all 200ms ease;
+
+        &:hover {
+            background-color: #03a093;
+        }
+    }
+
+    &__help-find-img {
+
+    }
 }

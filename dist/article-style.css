@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 89.9375em) {
   .hide-for-ipadpro-and-smaller {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1549,7 +1549,35 @@ h1, h2, h3, h4, h5, h6 {
 .main__aside-buy-cta-btn:hover {
   background-color: #03a093;
 }
-
+.main__help-find-bordered {
+  padding: 4.4375rem 0 9.875rem;
+  border-top: 1px solid #DEDEDE;
+}
+.main__help-find-h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #333333;
+}
+.main__help-find-txt {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #333333;
+}
+.main__help-find-cta {
+  display: inline-block;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #35B3A9;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: all 200ms ease;
+}
+.main__help-find-cta:hover {
+  background-color: #03a093;
+}
 .footer {
   padding-top: 2.1875rem;
   background-color: #2963A3;
