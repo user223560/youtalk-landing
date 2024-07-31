@@ -1550,6 +1550,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #03a093;
 }
 .main__help-find {
+  position: relative;
   padding: 4.4375rem 0 9.875rem;
   border-top: 1px solid #DEDEDE;
 }
@@ -1557,6 +1558,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .main__help-find-h1 {
+  max-width: 21.75rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
   font-size: 3rem;
@@ -1564,6 +1566,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
 }
 .main__help-find-txt {
+  max-width: 21.75rem;
   margin-bottom: 2rem;
   font-size: 1.125rem;
   line-height: 1.625rem;
@@ -1587,6 +1590,22 @@ h1, h2, h3, h4, h5, h6 {
   left: 40rem;
   width: 30rem;
   height: 25.625rem;
+  background-repeat: no-repeat;
+}
+.main__help-find-blob {
+  position: absolute;
+  top: 4.375rem;
+  right: -19.9375rem;
+  width: 17rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+}
+.main__help-find-decor {
+  position: absolute;
+  top: 26.375rem;
+  right: -7.5rem;
+  width: 90rem;
+  height: 6.75rem;
   background-repeat: no-repeat;
 }
 

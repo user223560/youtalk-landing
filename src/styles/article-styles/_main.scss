@@ -1263,6 +1263,7 @@
     }
 
     &__help-find {
+        position: relative;
         padding: 4.4375rem 0 9.875rem;  // 71px 158px
         border-top: 1px solid $sixthColor;
     }
@@ -1272,6 +1273,7 @@
     }
 
     &__help-find-h1 {
+        max-width: 21.75rem;  // 348px
         margin-bottom: 1.5rem;  // 24px
         font-weight: 700;
         font-size: $fontLgst;
@@ -1280,6 +1282,7 @@
     }
 
     &__help-find-txt {
+        max-width: 21.75rem;  // 348px
         margin-bottom: 2rem;  // 32px
         font-size: $fontLg;
         line-height: 1.625rem;  // 26px
@@ -1306,6 +1309,24 @@
         left: 40rem;  // 640px
         width: 30rem;  // 480px
         height: 25.625rem;  // 410px
+        background-repeat: no-repeat;
+    }
+
+    &__help-find-blob {
+        position: absolute;
+        top: 4.375rem;  // 70px
+        right: -19.9375rem;  // -319px
+        width: 17rem;  // 272px
+        height: 15rem;  // 240px
+        background-repeat: no-repeat;
+    }
+
+    &__help-find-decor {
+        position: absolute;
+        top: 26.375rem;  // 422px
+        right: -7.5rem;  // -120px
+        width: 90rem;  // 1440px
+        height: 6.75rem;  // 108px
         background-repeat: no-repeat;
     }
 }
