@@ -944,6 +944,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 48em) {
   .main__aside {
+    position: relative;
     display: flex;
     margin-bottom: 3.6875rem;
     flex-direction: column;
@@ -1549,10 +1550,28 @@ h1, h2, h3, h4, h5, h6 {
 .main__aside-buy-cta-btn:hover {
   background-color: #03a093;
 }
+.main__blob {
+  position: absolute;
+  right: -7.5rem;
+  bottom: 137.4375rem;
+  width: 13.625rem;
+  height: 31.375rem;
+  background-repeat: no-repeat;
+}
+@media (min-width: 120em) {
+  .main__blob {
+    right: -22.0625rem;
+  }
+}
 .main__help-find {
   position: relative;
-  padding: 4.4375rem 0 9.875rem;
+  padding: 4.4375rem 0 11.875rem;
   border-top: 1px solid #DEDEDE;
+}
+@media (min-width: 120em) {
+  .main__help-find {
+    padding-bottom: 13.375rem;
+  }
 }
 .main__help-find-contents {
   position: relative;
@@ -1600,13 +1619,26 @@ h1, h2, h3, h4, h5, h6 {
   height: 15rem;
   background-repeat: no-repeat;
 }
+@media (min-width: 120em) {
+  .main__help-find-blob {
+    width: 4rem;
+    right: -21.875rem;
+  }
+}
 .main__help-find-decor {
   position: absolute;
-  top: 26.375rem;
-  right: -7.5rem;
+  bottom: 0;
+  left: -7.5rem;
   width: 90rem;
   height: 6.75rem;
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #EFF5FB 50.8%, 85.09%, #FFFFFF);
+  border-radius: 50% 50% 0 0/1.5625rem 1.5625rem 0 0;
+}
+@media (min-width: 120em) {
+  .main__help-find-decor {
+    width: 120rem;
+    left: -22.9375rem;
+  }
 }
 
 .footer {

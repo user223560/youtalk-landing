@@ -655,6 +655,7 @@
             //     "gift buy";
             // grid-template-columns: repeat(2, 356px);  // 356px
 
+            position: relative;
             display: flex;
             margin-bottom: 3.6875rem;  // 59px
             flex-direction: column;
@@ -1262,10 +1263,27 @@
         }
     }
 
+    &__blob {
+        position: absolute;
+        right: -7.5rem;  // -120px
+        bottom: 137.4375rem;  // 2199px
+        width: 13.625rem;  // 218px
+        height: 31.375rem;  // 502px
+        background-repeat: no-repeat;
+
+        @include breakpoint-up(desktoplarge) {
+            right: -22.0625rem;  // -353px
+        }
+    }
+
     &__help-find {
         position: relative;
-        padding: 4.4375rem 0 9.875rem;  // 71px 158px
+        padding: 4.4375rem 0 11.875rem;  // 71px 190px
         border-top: 1px solid $sixthColor;
+
+        @include breakpoint-up(desktoplarge) {
+            padding-bottom: 13.375rem;  // 214px
+        }
     }
 
     &__help-find-contents {
@@ -1319,14 +1337,25 @@
         width: 17rem;  // 272px
         height: 15rem;  // 240px
         background-repeat: no-repeat;
+
+        @include breakpoint-up(desktoplarge) {
+            width: 4rem;  // 64px
+            right: -21.875rem;  // -350px
+        }
     }
 
     &__help-find-decor {
         position: absolute;
-        top: 26.375rem;  // 422px
-        right: -7.5rem;  // -120px
+        bottom: 0;
+        left: -7.5rem;  // -120px
         width: 90rem;  // 1440px
         height: 6.75rem;  // 108px
-        background-repeat: no-repeat;
+        background: linear-gradient(180deg, $seventhColor 50.8%, 85.09%, $firstColor);
+        border-radius: 50% 50% 0 0 / 1.5625rem 1.5625rem 0 0;  // 25px
+
+        @include breakpoint-up(desktoplarge) {
+            width: 120rem;  // 1920px
+            left: -22.9375rem;  // -367px
+        }
     }
 }
