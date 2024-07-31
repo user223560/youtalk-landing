@@ -1549,9 +1549,12 @@ h1, h2, h3, h4, h5, h6 {
 .main__aside-buy-cta-btn:hover {
   background-color: #03a093;
 }
-.main__help-find-bordered {
+.main__help-find {
   padding: 4.4375rem 0 9.875rem;
   border-top: 1px solid #DEDEDE;
+}
+.main__help-find-contents {
+  position: relative;
 }
 .main__help-find-h1 {
   margin-bottom: 1.5rem;
@@ -1578,6 +1581,15 @@ h1, h2, h3, h4, h5, h6 {
 .main__help-find-cta:hover {
   background-color: #03a093;
 }
+.main__help-find-img {
+  position: absolute;
+  top: 0;
+  left: 40rem;
+  width: 30rem;
+  height: 25.625rem;
+  background-repeat: no-repeat;
+}
+
 .footer {
   padding-top: 2.1875rem;
   background-color: #2963A3;

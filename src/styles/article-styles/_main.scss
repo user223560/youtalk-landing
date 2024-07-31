@@ -1262,13 +1262,13 @@
         }
     }
 
-    &__help-find-bordered {
+    &__help-find {
         padding: 4.4375rem 0 9.875rem;  // 71px 158px
         border-top: 1px solid $sixthColor;
     }
 
     &__help-find-contents {
-
+        position: relative;
     }
 
     &__help-find-h1 {
@@ -1301,6 +1301,11 @@
     }
 
     &__help-find-img {
-
+        position: absolute;
+        top: 0;
+        left: 40rem;  // 640px
+        width: 30rem;  // 480px
+        height: 25.625rem;  // 410px
+        background-repeat: no-repeat;
     }
 }
