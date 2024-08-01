@@ -5,6 +5,7 @@ https://www.figma.com/file/NsD6GG3ZWD29ZWzkCMUkjU/Youtalk---Blog?t=uSFxX1tmP6DXI
 
 ## Основные особенности вёрстки
 <ol>
+  <li>Использование подхода "mobile-first"</li>
   <li>Стилизация при помощи препроцессора SCSS</li>
   <li>Наименование классов в соответствии с методологией БЭМ</li>
   <li>Использование базового JavaScript</li>
